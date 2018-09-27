@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N16__M512_t3__a0.3/groan.hmm   className: 'groan'
+	N=16 M=512 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 8
+	        auto value: 0.3
+	      #refinements: 19
+	          Σ log(P): -3.845739e+03

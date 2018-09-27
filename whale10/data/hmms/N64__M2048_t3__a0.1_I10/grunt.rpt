@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N64__M2048_t3__a0.1_I10/grunt.hmm   className: 'grunt'
+	N=64 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 80
+	        auto value: 0.1
+	      #refinements: 10
+	          Σ log(P): -2.871600e+04

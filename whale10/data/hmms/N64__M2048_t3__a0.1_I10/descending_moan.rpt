@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N64__M2048_t3__a0.1_I10/descending_moan.hmm   className: 'descending_moan'
+	N=64 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 122
+	        auto value: 0.1
+	      #refinements: 10
+	          Σ log(P): -1.411572e+05

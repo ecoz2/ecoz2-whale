@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N16__M512_t3__a0.3/modulated_cry.hmm   className: 'modulated_cry'
+	N=16 M=512 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 9
+	        auto value: 0.3
+	      #refinements: 13
+	          Σ log(P): -5.584451e+03

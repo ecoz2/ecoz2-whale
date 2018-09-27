@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N16__M512_t3__a0.3/gurgle?.hmm   className: 'gurgle?'
+	N=16 M=512 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 4
+	        auto value: 0.3
+	      #refinements: 8
+	          Σ log(P): -2.149879e+03
