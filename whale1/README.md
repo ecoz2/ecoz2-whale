@@ -1,12 +1,10 @@
 # Basic VQ and VQ/HMM based song unit classification
 
-The exercise here was done on selections corresponding 
-to a single song file: `HBSe_20151207T070326.wav`
-
-The selection WAV files are located (in a separated space) at:
+The exercise here is done on the selections extracted from the particular
+file `HBSe_20151207T070326.wav`, that is, these files:
 
 ```
-../../ecoz/data/signals/*/*HBSe_20151207T070326_*wav
+../data/signals/*/from_HBSe_20151207T070326_*wav
 ```
 
 ## Predictor files
@@ -16,7 +14,7 @@ is done with the `lpc` program, which puts the generated files under
 `data/predictors/`:
 
 ```
-lpc -P 36 -W 45 -O 15 -m 6 -s 0.8 ../../ecoz/data/signals/*/*HBSe_20151207T070326_*wav
+lpc -P 36 -W 45 -O 15 -m 6 -s 0.8 ../data/signals/*/*HBSe_20151207T070326_*wav
 ```
 
 - `-P 36`: 36-order prediction;
@@ -37,7 +35,7 @@ descending_moan   groan             gurgle            modulated_cry
 descending_shriek groan_+_purr      gurgle?           purr
 ```
 
-See:
+The concrete exercises on top of these predictor data are:
 
 - `vq.md`: A basic VQ based classification, mainly intended to help
   verify the implementation of the clustering algorithm, but also

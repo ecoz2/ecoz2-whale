@@ -16,7 +16,7 @@ done
 ### M=2048 on training instances
 
 ```
-➜  whale10 git:(master) ✗ vq.classify -r data/codebooks/[a-z]*/eps_0.0005__2048.cbook data/predictors/TRAIN/*/*.prd
+$ vq.classify -r data/codebooks/[a-z]*/eps_0.0005__2048.cbook data/predictors/TRAIN/*/*.prd
 
 Loading models:
  0: data/codebooks/ascending_moan/eps_0.0005__2048.cbook         : 'ascending_moan'
@@ -78,7 +78,7 @@ data/predictors/TRAIN/gurgle/from_HBSe_20151121T040102__258.45837_259.85187.prd:
 ### M=2048 on test instances
 
 ```
-vq.classify data/codebooks/[a-z]*/eps_0.0005__2048.cbook data/predictors/TEST/*/*.prd
+$ vq.classify data/codebooks/[a-z]*/eps_0.0005__2048.cbook data/predictors/TEST/*/*.prd
 
 Loading models:
  0: data/codebooks/ascending_moan/eps_0.0005__2048.cbook         : 'ascending_moan'
@@ -135,7 +135,7 @@ ____*_____*____*_************_*________**___***************_*__*****_**____*_*__
 ### M=1024 on training instances
 
 ```
-vq.classify data/codebooks/[a-z]*/eps_0.0005__1024.cbook data/predictors/TRAIN/*/*.prd
+$ vq.classify data/codebooks/[a-z]*/eps_0.0005__1024.cbook data/predictors/TRAIN/*/*.prd
 
 Loading models:
  0: data/codebooks/ascending_moan/eps_0.0005__1024.cbook         : 'ascending_moan'
@@ -192,7 +192,7 @@ Loading models:
 ### M=1024 on test instances:
 
 ```
-vq.classify data/codebooks/[a-z]*/eps_0.0005__1024.cbook data/predictors/TEST/*/*.prd
+$ vq.classify data/codebooks/[a-z]*/eps_0.0005__1024.cbook data/predictors/TEST/*/*.prd
 
 Loading models:
  0: data/codebooks/ascending_moan/eps_0.0005__1024.cbook         : 'ascending_moan'

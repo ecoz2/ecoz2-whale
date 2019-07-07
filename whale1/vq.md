@@ -16,7 +16,7 @@ done
 ### M=512 on training instances
 
 ```
-➜  whale1 git:(master) ✗ vq.classify data/codebooks/[a-z]*/eps_0.0005__0512.cbook data/predictors/TRAIN/*/*.prd
+$ vq.classify data/codebooks/[a-z]*/eps_0.0005__0512.cbook data/predictors/TRAIN/*/*.prd
 
 Loading models:
  0: data/codebooks/descending_moan/eps_0.0005__0512.cbook        : 'descending_moan'
@@ -58,7 +58,7 @@ Loading models:
 ### M=512 on test instances:
 
 ```
-➜  whale1 git:(master) ✗ vq.classify data/codebooks/[a-z]*/eps_0.0005__0512.cbook data/predictors/TEST/*/*.prd
+$ vq.classify data/codebooks/[a-z]*/eps_0.0005__0512.cbook data/predictors/TEST/*/*.prd
 
 Loading models:
  0: data/codebooks/descending_moan/eps_0.0005__0512.cbook        : 'descending_moan'

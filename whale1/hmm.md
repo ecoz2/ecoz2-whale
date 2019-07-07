@@ -18,6 +18,8 @@ Quantization using 512-codeword codebook:
 vq.quantize data/codebooks/_/eps_0.0005__0512.cbook data/predictors/*/*/*prd
 ```
 
+Resulting sequences get generated under `data/sequences/{TRAIN,TEST}`.
+
 ## HMM training
 
 Using the designated training sequences:
