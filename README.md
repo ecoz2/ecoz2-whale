@@ -10,7 +10,7 @@ as I play with the whale song files (https://github.com/ecoz2/ecoz2).
 
 These notes are pretty terse in general.
 A general presentation about VQ/HMM and its application in these exercises 
-can be found at https://github.com/ecoz2/ecoz2-doc/blob/master/vqhmm-whale.pdf.
+can be found at https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 
 # About the labelled files
 
