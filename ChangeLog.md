@@ -1,3 +1,9 @@
+2020-03-14
+
+- add exercise on MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.
+  Note: Direct run of the processing commands with similar parameters as
+  in initial exercises, in particular, no model tuning at all.
+
 2019-07-07
 
 - Include the annotated selection data to make this repo more self-contained
