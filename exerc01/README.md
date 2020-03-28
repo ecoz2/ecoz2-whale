@@ -146,12 +146,12 @@ Resulting sequences get generated under `data/sequences/{TRAIN,TEST}`.
 
 ## HMM training
 
-For each class (labe), an HMM model is trained using the corresponding
+For each class (label), an HMM model is trained using the corresponding
 training sequences: 
 
 ```
 for class in `ls data/sequences/TRAIN/M2048/`; do 
-  ecoz2 hmm learn -a 0.1 -I 30 -N 64 data/sequences/TRAIN/M2048/$class &
+  ecoz2 hmm learn -N 64 data/sequences/TRAIN/M2048/$class &
 done
 ```
 
@@ -320,3 +320,27 @@ _*__*____****_*_****__**_*_*****************_*_*******__*******___****__*_****_*
 
        TOTAL     75.75%   1060        803 134  60  21  14   7   6   5   0   5   1   1   1   0   2   0   0   0   0   0
 ```
+
+# Training parameter variations
+
+For various values of `$N` and `$M`,
+as indicated in [summary.csv](summary.csv),
+HMM models trained and evaluated as follows
+(see [variations.sh](variations.sh).
+
+    for class in `ls data/sequences/TRAIN/M${M}/`; do
+      ecoz2 hmm learn -N ${N} data/sequences/TRAIN/M${M}/$class &
+    done
+
+Note, the default `-a` parameter value is `0.3`, which gets reflected
+in the resulting HMM model files as shown below.
+
+Classification done as follows:
+
+- On training data:
+    
+        ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a0.3 --sequences data/sequences/TRAIN/M${M}
+    
+- On test data:
+    
+        ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a0.3 --sequences data/sequences/TEST/M${M}

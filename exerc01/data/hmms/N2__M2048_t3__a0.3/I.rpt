@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N2__M2048_t3__a0.3/I.hmm   className: 'I'
+	N=2 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 377
+	        auto value: 0.3
+	      #refinements: 101
+	          Σ log(P): -7.010365e+04

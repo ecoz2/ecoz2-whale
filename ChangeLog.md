@@ -1,3 +1,7 @@
+2020-03-27
+
+- HMM training parameter variations [exerc01/README.md](exerc01/README.md).
+
 2020-03-14
 
 - add exercise on MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.

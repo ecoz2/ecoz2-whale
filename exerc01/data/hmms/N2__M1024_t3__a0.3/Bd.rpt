@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N2__M1024_t3__a0.3/Bd.hmm   className: 'Bd'
+	N=2 M=1024 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 41
+	        auto value: 0.3
+	      #refinements: 15
+	          Σ log(P): -2.754140e+04

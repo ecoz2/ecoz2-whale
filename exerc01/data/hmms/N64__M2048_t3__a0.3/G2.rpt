@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N64__M2048_t3__a0.3/G2.hmm   className: 'G2'
+	N=64 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 246
+	        auto value: 0.3
+	      #refinements: 46
+	          Σ log(P): -1.445591e+05

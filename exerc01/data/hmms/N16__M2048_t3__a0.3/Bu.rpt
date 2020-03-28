@@ -1,0 +1,8 @@
+
+	Model: data/hmms/N16__M2048_t3__a0.3/Bu.hmm   className: 'Bu'
+	N=16 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 35
+	        auto value: 0.3
+	      #refinements: 92
+	          Σ log(P): -1.753164e+04
