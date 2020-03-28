@@ -1,19 +1,20 @@
 # VQ based classification
 
-See [vq.sh](vq.sh).
+Done with the help of this script: [vq.sh](vq.sh).
 
 Training phase not captured below, only the classification steps.
 
-## TODO 
+- **TODO**: Examine codebook generation. For example, both:
 
-Examine codebook generation.
-For example, both
-[data/codebooks/B/eps_0.0005.rpt](data/codebooks/B/eps_0.0005.rpt),
-a pretty bad case,
-and
-[data/codebooks/C1/eps_0.0005.rpt](data/codebooks/C1/eps_0.0005.rpt),
-a pretty good one,
-have many empty cells. Probaly OK but worth closer examination.
+    - [B/eps_0.0005.rpt](data/codebooks/B/eps_0.0005.rpt),
+      a pretty bad classification case, and
+    - [C1/eps_0.0005.rpt](data/codebooks/C1/eps_0.0005.rpt),
+      a pretty good one,
+    
+    have many empty cells (apparently in "half" of the vector space).
+    Probably OK but worth closer examination.
+
+Classification results:
 
 ```
 $ ecoz2 vq classify --codebooks data/codebooks/[A-Z]*/eps_0.0005_M_1024.cbook --predictors data/predictors/TRAIN
