@@ -103,28 +103,28 @@ num_actual_predictors: 4296
 Codebook generation:
 
 396678 training vectors (ε=0.0005)
-Report: data/codebooks//eps_0.0005.rpt
-data/codebooks//eps_0.0005_M_0002.cbook
+Report: data/codebooks/_/eps_0.0005.rpt
+data/codebooks/_/eps_0.0005_M_0002.cbook
 (12)	DP=0.568047	DDprv=2253669e+3DD=225332D=489570.000150422    e+302
-data/codebooks//eps_0.0005_M_0004.cbook
+data/codebooks/_/eps_0.0005_M_0004.cbook
 (8)	DP=0.452885	DDprv=179733	DD=179650	0.000465387
-data/codebooks//eps_0.0005_M_0008.cbook
+data/codebooks/_/eps_0.0005_M_0008.cbook
 (21)	DP=0.357849	DDprv=142001	DD=141951	0.000352577
-data/codebooks//eps_0.0005_M_0016.cbook
+data/codebooks/_/eps_0.0005_M_0016.cbook
 (14)	DP=0.283411	DDprv=112473	DD=112423	0.000441609
-data/codebooks//eps_0.0005_M_0032.cbook
+data/codebooks/_/eps_0.0005_M_0032.cbook
 (15)	DP=0.236244	DDprv=93758.2	DD=93712.7	0.000484804
-data/codebooks//eps_0.0005_M_0064.cbook
+data/codebooks/_/eps_0.0005_M_0064.cbook
 (15)	DP=0.204155	DDprv=81017.8	DD=80983.8	0.000419916
-data/codebooks//eps_0.0005_M_0128.cbook
+data/codebooks/_/eps_0.0005_M_0128.cbook
 (18)	DP=0.179191	DDprv=71115.7	DD=71081.1	0.000486512
-data/codebooks//eps_0.0005_M_0256.cbook
+data/codebooks/_/eps_0.0005_M_0256.cbook
 (19)	DP=0.159744	DDprv=63396.7	DD=63366.8	0.000471613
-data/codebooks//eps_0.0005_M_0512.cbook
+data/codebooks/_/eps_0.0005_M_0512.cbook
 (15)	DP=0.145311	DDprv=57666.3	DD=57641.6	0.000429173
-data/codebooks//eps_0.0005_M_1024.cbook
+data/codebooks/_/eps_0.0005_M_1024.cbook
 (14)	DP=0.133171	DDprv=52849.5	DD=52826.5	0.000444535
-data/codebooks//eps_0.0005_M_2048.cbook
+data/codebooks/_/eps_0.0005_M_2048.cbook
 (14)	DP=0.122283	DDprv=48530.7	DD=48507.7	0.000489385
 ```
 
@@ -133,11 +133,11 @@ data/codebooks//eps_0.0005_M_2048.cbook
 Quantize all TRAIN and TEST vectors using the 2048-codeword codebook:
 
 ```
-$ ecoz2 vq quantize --codebook data/codebooks/eps_0.0005_M_2048.cbook data/predictors/TRAIN
+$ ecoz2 vq quantize --codebook data/codebooks/_/eps_0.0005_M_2048.cbook data/predictors/TRAIN
 ...
 total: 4296 sequences; dprm total = 0.120606
 
-$ ecoz2 vq quantize --codebook data/codebooks/eps_0.0005_M_2048.cbook data/predictors/TEST
+$ ecoz2 vq quantize --codebook data/codebooks/_/eps_0.0005_M_2048.cbook data/predictors/TEST
 ...
 total: 1060 sequences; dprm total = 0.131448
 ```
