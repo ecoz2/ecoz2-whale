@@ -322,24 +322,93 @@ Loading models:
 
 # Training parameter variations
 
-For various values of `$N` and `$M`,
-as indicated in [summary.csv](summary.csv),
-HMM models trained and evaluated as follows
-(see [variations.sh](variations.sh)).
+Using [variations.sh](variations.sh), [summary.csv](summary.csv) shows
+the resulting performance for various values of `$N` and `$M`.
 
-    for class in `ls data/sequences/TRAIN/M${M}/`; do
-      ecoz2 hmm learn -N ${N} data/sequences/TRAIN/M${M}/$class &
-    done
+## Performance
 
-Note, the default `-a` parameter value is `0.3`, which gets reflected
-in the resulting HMM model files as shown below.
-
-Classification done as follows:
-
-- On training data:
+Here's some examination of the performance of one particular set of
+training parameters, `N=32, M=1024`, on the test instances.
+ 
+From the output of:
+ 
+    ecoz2 hmm classify --models data/hmms/N32__M1024_t3__a0.3 --sequences data/sequences/TEST/M1024
     
-        ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a0.3 --sequences data/sequences/TRAIN/M${M}
-    
-- On test data:
-    
-        ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a0.3 --sequences data/sequences/TEST/M${M}
+here's the confusion matrix:  
+ 
+```
+            0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19     tests   errors
+
+   A   0  101   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0      102       1
+   B   1    0   0   0   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0        2       2
+  Bd   2    0   0   2   4   1   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0        9       7
+  Bm   3    4   0   1  99   2   0   0   0   1   0   0   0   1   0   1   6   6   0   0   0      121      22
+  Bu   4    0   0   0   5   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0        8       5
+   C   5    1   0   0   0   0  95   0   0   1   0   6   0   2   0   2   1   0   0   0   1      109      14
+  C1   6    0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0        3       0
+   D   7    0   0   0   0   0   2   0  26   2   0   3   0   0   0   1   0   0   0   0   0       34       8
+   E   8    0   0   0   0   0   3   0   3 122   0   0   0   5   0   4   4   0   0   0   1      142      20
+  E1   9    0   0   0   0   0   1   0   0   1   1   0   0   2   0   0   0   0   0   0   0        5       4
+   F  10    0   0   0   0   0   4   0   1   1   0  60   0   1   0   0   0   0   0   0   0       67       7
+   G  11    0   0   0   1   0   0   0   0   2   0   1   8   3   0   0   0   0   0   0   0       15       7
+  G2  12    0   0   0   0   0   0   0   0   4   0   2   0  55   0   0   0   0   0   0   0       61       6
+   H  13    0   0   0   0   0   0   0   2   0   0   0   0   0  24   0   0   2   0   0   0       28       4
+   I  14    0   0   0   0   0   0   0   0  11   0   0   0   2   0  53  27   1   0   0   0       94      41
+  I2  15    1   0   0   9   0   2   0   0   7   0   0   0   5   0   2 111   4   0   0   1      142      31
+  I3  16    0   0   0   3   0   1   0   0   0   0   0   0   0   1   0   6  53   0   0   0       64      11
+  I4  17    0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   1   3   2   0   0        9       7
+   M  18    1   0   0   0   0   0   0   2   1   0   2   0   0   4   0   0   0   0   1   0       11      10
+   P  19    1   0   0   0   0   1   0   0   1   0   0   1   3   0   0   2   0   0   0  25       34       9
+```
+
+and here's the classification ranking ("candidate order") for each class,
+with rows sorted by decreasing accuracy:
+
+``` 
+     class     accuracy    tests      candidate order
+  C1     6      100.00%     3          3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   A     0       99.02%   102        101   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+  G2    12       90.16%    61         55   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   F    10       89.55%    67         60   4   2   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   C     5       87.16%   109         95   8   4   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   E     8       85.92%   142        122  13   4   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   H    13       85.71%    28         24   2   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  I3    16       82.81%    64         53   9   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  Bm     3       81.82%   121         99   6   4   2   2   3   2   0   0   1   2   0   0   0   0   0   0   0   0   0
+  I2    15       78.17%   142        111  17   5   5   2   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+   D     7       76.47%    34         26   4   2   0   0   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+   P    19       73.53%    34         25   4   2   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   I    14       56.38%    94         53  24   6   4   2   1   2   1   1   0   0   0   0   0   0   0   0   0   0   0
+   G    11       53.33%    15          8   0   3   1   0   0   0   1   1   0   1   0   0   0   0   0   0   0   0   0
+  Bu     4       37.50%     8          3   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  Bd     2       22.22%     9          2   4   1   0   0   0   1   0   1   0   0   0   0   0   0   0   0   0   0   0
+  I4    17       22.22%     9          2   2   0   0   1   1   2   0   0   1   0   0   0   0   0   0   0   0   0   0
+  E1     9       20.00%     5          1   1   0   1   0   0   1   1   0   0   0   0   0   0   0   0   0   0   0   0
+   M    18        9.09%    11          1   3   3   1   1   0   1   0   1   0   0   0   0   0   0   0   0   0   0   0
+   B     1        0.00%     2          0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0
+
+       TOTAL     79.62%   1060        844 112  40  18  13   8  12   3   4   2   3   0   0   0   0   0   1   0   0   0
+```
+
+Some observations:
+
+- Class "A" seems pretty well modeled given the 99.02% correct classification
+  on 102 instances
+    - 1 instance misclassified as "I"
+  
+- Class "G2" also pretty well modeled with 90.16% accuracy on 61 instances
+    - 4 instances misclassified as "E"
+    - 2 instances misclassified as "F"
+  
+- Class "F" also pretty well modeled with 89.55% accuracy on 60 instances
+    - 4 instances misclassified as "C"
+    - 1 instance misclassified as "D"
+    - 1 instance misclassified as "E"
+    - 1 instance misclassified as "G2"
+  
+- All `B` instances misclassified, but only 2 available.
+
+- Except for "C1" (100% accuracy on 3 instances), the least performant
+  classes have in general a low number of test instances, that is, a
+  relatively low number of corresponding training instances 
+  (see note about the `-s 0.8` option above).
