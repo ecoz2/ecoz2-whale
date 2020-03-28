@@ -323,19 +323,20 @@ Loading models:
 # Training parameter variations
 
 [summary.csv](summary.csv) captures a summary of the resulting
-classificatin performance for various values of `$N` and `$M`.
+classification performance for various values of 
+`N` (number of states in HMM models) and 
+`M` (number of quantization symbols).
  
-(Script used: [variations.sh](variations.sh).) 
-
+(Exercises done with the help of [variations.sh](variations.sh).) 
 
 ## Performance
 
-Here's some examination of the performance of one particular set of
+What follows is some examination of the performance of one particular set of
 training parameters, `N=32, M=1024`, on the test instances.
  
-From the output of:
+In more detail, from the output of:
  
-    ecoz2 hmm classify --models data/hmms/N32__M1024_t3__a0.3 --sequences data/sequences/TEST/M1024
+    $ ecoz2 hmm classify --models data/hmms/N32__M1024_t3__a0.3 --sequences data/sequences/TEST/M1024
     
 here's the confusion matrix:  
  
@@ -411,7 +412,7 @@ Some observations:
   
 - All "B" instances misclassified, but only 2 available.
 
-- Except for "C1" (100% accuracy on 3 instances), the least performant
+- Except for "C1" (100% accuracy but only on 3 instances), the least performant
   classes have in general a low number of test instances, that is, a
   relatively low number of corresponding training instances 
   (see note about the `-s 0.8` option above).
