@@ -10,14 +10,12 @@ wait
 echo
 echo "TRAINING COMPLETED.  P=$P  e=$e"
 
-###    *** TODO  IMPLEMENT  `vq classify`
-
 echo
 echo "CLASSIFYING TRAINING PREDICTORS"
 ecoz2 vq classify --codebooks data/codebooks/[A-Z]*/eps_${e}_M_1024.cbook --predictors data/predictors/TRAIN
 
 echo
-echo "CLASSIFYING TEST SEQUENCES"
+echo "CLASSIFYING TEST PREDICTORS"
 ecoz2 vq classify --codebooks data/codebooks/[A-Z]*/eps_${e}_M_1024.cbook --predictors data/predictors/TEST
 
 echo "** DONE **"

@@ -1,7 +1,7 @@
 2020-03
 
-- preparing to run VQ based classification
-  see exerc01/vq.shexerc01/vq.sh
+- run VQ based classification.
+  see [exerc01/vq.md](exerc01/vq.md).
     
 - HMM training parameter variations [exerc01/README.md](exerc01/README.md).
 
