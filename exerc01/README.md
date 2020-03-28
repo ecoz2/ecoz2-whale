@@ -322,8 +322,11 @@ Loading models:
 
 # Training parameter variations
 
-Using [variations.sh](variations.sh), [summary.csv](summary.csv) shows
-the resulting performance for various values of `$N` and `$M`.
+[summary.csv](summary.csv) captures a summary of the resulting
+classificatin performance for various values of `$N` and `$M`.
+ 
+(Script used: [variations.sh](variations.sh).) 
+
 
 ## Performance
 
@@ -406,7 +409,7 @@ Some observations:
     - 1 instance misclassified as "E"
     - 1 instance misclassified as "G2"
   
-- All `B` instances misclassified, but only 2 available.
+- All "B" instances misclassified, but only 2 available.
 
 - Except for "C1" (100% accuracy on 3 instances), the least performant
   classes have in general a low number of test instances, that is, a
