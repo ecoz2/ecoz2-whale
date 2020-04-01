@@ -1,6 +1,17 @@
 # VQ based classification
 
-Done with the help of this script: [vq.sh](vq.sh).
+As done a few months ago for a different set of files and labels,
+the following is a similar clustering based classification
+on the 4.5 hour recording and labelling.
+
+Again, this particular exercise is mainly intended to validate the
+clustering/quantization steps as well as to help with the overall
+evaluation of the HMM based classification. 
+
+----
+
+The following VQ based classification done with the help of this script:
+[vq.sh](vq.sh).
 
 Training phase not captured below, only the classification steps.
 
