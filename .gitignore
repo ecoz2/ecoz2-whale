@@ -3,3 +3,5 @@
 *.hmm
 *.seq
 exerc01/data/signals
+stderr
+seq

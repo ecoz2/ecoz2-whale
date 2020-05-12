@@ -4,5 +4,5 @@
 	restriction: 1e-05
 	        #sequences: 441
 	        auto value: 0.3
-	      #refinements: 49
-	          Σ log(P): -2.665084e+05
+	      #refinements: 57
+	          Σ log(P): -2.715284e+05

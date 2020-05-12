@@ -1,0 +1,81 @@
+# TOTAL sequences
+
+$ for c in `ls data/sequences/TRAIN/M1024`; do
+ echo "`find data/sequences/*/M1024/$c -name \*seq | wc -l` total sequences for class $c"
+done | sort
+
+      13 total sequences for class B
+      16 total sequences for class C1
+      27 total sequences for class E1
+      43 total sequences for class Bu
+      46 total sequences for class I4
+      50 total sequences for class Bd
+      60 total sequences for class M
+      76 total sequences for class G
+     141 total sequences for class H
+     171 total sequences for class P
+     175 total sequences for class D
+     307 total sequences for class G2
+     324 total sequences for class I3
+     340 total sequences for class F
+     471 total sequences for class I
+     512 total sequences for class A
+     550 total sequences for class C
+     607 total sequences for class Bm
+     713 total sequences for class E
+     714 total sequences for class I2
+
+
+# TRAINING sequences
+
+for c in `ls data/sequences/TRAIN/M1024`; do
+ echo "`find data/sequences/TRAIN/M1024/$c -name \*seq | wc -l` training sequences for class $c"
+done | sort
+      11 training sequences for class B
+      13 training sequences for class C1
+      22 training sequences for class E1
+      35 training sequences for class Bu
+      37 training sequences for class I4
+      41 training sequences for class Bd
+      49 training sequences for class M
+      61 training sequences for class G
+     113 training sequences for class H
+     137 training sequences for class P
+     141 training sequences for class D
+     246 training sequences for class G2
+     260 training sequences for class I3
+     273 training sequences for class F
+     377 training sequences for class I
+     410 training sequences for class A
+     441 training sequences for class C
+     486 training sequences for class Bm
+     571 training sequences for class E
+     572 training sequences for class I2
+
+
+# TEST sequences
+
+$ for c in `ls data/sequences/TEST/M1024`; do
+ echo "`find data/sequences/TEST/M1024/$c -name \*seq | wc -l` test sequences for class $c"
+done | sort
+       2 test sequences for class B
+       3 test sequences for class C1
+       5 test sequences for class E1
+       8 test sequences for class Bu
+       9 test sequences for class Bd
+       9 test sequences for class I4
+      11 test sequences for class M
+      15 test sequences for class G
+      28 test sequences for class H
+      34 test sequences for class D
+      34 test sequences for class P
+      61 test sequences for class G2
+      64 test sequences for class I3
+      67 test sequences for class F
+      94 test sequences for class I
+     102 test sequences for class A
+     109 test sequences for class C
+     121 test sequences for class Bm
+     142 test sequences for class E
+     142 test sequences for class I2
+

@@ -3,6 +3,6 @@
 	N=64 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 571
-	        auto value: 0.3
-	      #refinements: 105
-	          Σ log(P): -1.348448e+05
+	        auto value: 0.3  (|log|=1.20397)
+	      #refinements: 111
+	          Σ log(P): -1.349578e+05

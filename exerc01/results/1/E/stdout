@@ -1,0 +1,41 @@
+ECOZ2 C version: 0.3.2
+num_actual_sequences: 571
+val_auto = 0.3
+ecoz2_set_random_seed: seed=-1; actual seed=16807
+
+--- hmm_learn ---  (use_par=1)
+num_sequences = 571
+epsilon = 1e-05
+    0: data/sequences/TRAIN/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10206.742_10207.303.seq
+    1: data/sequences/TRAIN/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10208.361_10209.118.seq
+  ...
+  569: data/sequences/TRAIN/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9820.538_9821.37.seq
+  570: data/sequences/TRAIN/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9822.233_9823.005.seq
+
+N=12 M=2048 type=3  #sequences = 571  max_T=95
+val_auto = 0.3   log=-1.20397   max_iterations=10
+estimating initial B matrix ...  (given max_T=95)
+num_not_emitting_states=0
+initial B matrix took 0.435s
+refinement info prepared
+.   1: Δ =   +3435.82  sum_log_prob =    -169818  prev =    -173254  'E'  (1.583s)
+.   2: Δ =   +1794.86  sum_log_prob =    -168023  prev =    -169818  'E'  (1.644s)
+.   3: Δ =   +1619.15  sum_log_prob =    -166404  prev =    -168023  'E'  (1.671s)
+.   4: Δ =   +1867.67  sum_log_prob =    -164536  prev =    -166404  'E'  (1.663s)
+.   5: Δ =   +2190.25  sum_log_prob =    -162346  prev =    -164536  'E'  (1.761s)
+.   6: Δ =   +2079.15  sum_log_prob =    -160267  prev =    -162346  'E'  (1.768s)
+.   7: Δ =   +2337.91  sum_log_prob =    -157929  prev =    -160267  'E'  (1.681s)
+.   8: Δ =   +1953.75  sum_log_prob =    -155975  prev =    -157929  'E'  (1.662s)
+.   9: Δ =   +1131.85  sum_log_prob =    -154843  prev =    -155975  'E'  (1.650s)
+.  10: Δ =   +1219.35  sum_log_prob =    -153624  prev =    -154843  'E'  (1.665s)
+
+
+	Model: data/hmms/N12__M2048_t3__a0.3_I10/E.hmm   className: 'E'
+	N=12 M=2048 type: cascade-3
+	restriction: 1e-05
+	        #sequences: 571
+	        auto value: 0.3
+	      #refinements: 10
+	          Σ log(P): -153624
+=> training took 17.189s     class=E
+

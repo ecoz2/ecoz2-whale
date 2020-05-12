@@ -327,7 +327,7 @@ classification performance for various values of
 `N` (number of states in HMM models) and 
 `M` (number of quantization symbols).
  
-(Exercises done with the help of [variations.sh](variations.sh).) 
+(Exercises done with the help of [this script](hmm-exercise.sh).)
 
 ## Performance
 
