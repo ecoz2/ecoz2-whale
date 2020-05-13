@@ -423,8 +423,15 @@ Some observations:
     cd exerc1/
     ./hmm-exercise.sh
 
-Plot parallel coordinates:
+Parallel coordinate plots:
 
     python summary-parallel.py
 
+The following highlights the combination with the highest test average accuracy:
+
 ![](summary-parallel.png)
+
+while the following shows a few of the combinations corresponding to the
+test average accuracy test average accuracies:
+
+![](summary-parallel2.png)
