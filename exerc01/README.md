@@ -150,20 +150,22 @@ For each class (label), an HMM model is trained using the corresponding
 training sequences.
 
 
-With performance measured as average accuracy on test sequences,
-[summary.csv](summary.csv) captures a summary of the resulting
+With performance measured as *average accuracy* on test sequences,
+[summary.csv](summary.csv) captures the resulting
 classification performance for various values of:
 
-- `N`: number of states in HMM models
-- `M`: number of quantization symbols
+- `N`: number of states in the HMM models
+- `M`: number of symbols
 - `I`: maximum number of iterations in HMM training
 
-(The parameter `-a` for stopping the iteration if the improvement in
-probability is not signficant enough is fixed to `0.3` in this exploration.)
+> The parameter `-a` is fixed to `0.3` in this exploration.
+> This parameter is used by the algorithm to stop the iterative process
+> if the increment of the probability of the model acounting for the
+> training sequences is not significant enough.)
 
-The complete exercise done with the help of [this script](hmm-exercise.sh).)
+The complete exercise has been done with the help of [this script](hmm-exercise.sh).
 
-The summary can be visualized with parallel coordinates:
+With parallel coordinates the summary can be visualized as follows:
 
     python summary-parallel.py
 
@@ -177,10 +179,12 @@ highest test average accuracies:
 
 ![](summary-parallel2.png)
 
+With `2048` clearly as the best `M` parameter, these plots also suggest
+that low values for `N` and `I` provide the best performance for the
+dataset at hand.
 
-What follows is a closer examination of the performance of one particular
-set of training parameters,  
-`N = 3`, `M = 2048`, `I = 2`, `a = 0.3`  
+What follows is a closer examination of the performance of the particular
+set of training parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
 on the test instances.
  
 Confusion matrix:
@@ -243,8 +247,9 @@ Some observations:
 
 - Class "A" seems pretty well modeled given the 98.04% correct classification
   on 100 out of 102 test instances
-    - 1 instance misclassified as "I"
-    - 1 instance misclassified as "I3"
+
+    - 1 instance misclassified as "I" (class number 14)
+    - 1 instance misclassified as "I3" (class number 16)
 
 - Class "F" also pretty well modeled with 94.03% accuracy on 67 instances
 
@@ -252,4 +257,4 @@ Some observations:
   classes have in general a very low number of test instances,
   that is, a relatively low number of corresponding training instances
   (see note about the `-s 0.8` option above).
-  So, we are just facing lack of enough data to train the models.
+  So, we may be just be facing lack of enough data to train the models.
