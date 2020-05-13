@@ -12,30 +12,30 @@ epsilon = 1e-05
    35: data/sequences/TRAIN/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__943.2354_949.4917.seq
    36: data/sequences/TRAIN/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__958.17194_962.1427.seq
 
-N=12 M=2048 type=3  #sequences = 37  max_T=721
+N=20 M=2048 type=3  #sequences = 37  max_T=721
 val_auto = 0.3   log=-1.20397   max_iterations=10
 estimating initial B matrix ...  (given max_T=721)
-num_not_emitting_states=4
-initial B matrix took 0.229s
+num_not_emitting_states=1
+initial B matrix took 0.774s
 refinement info prepared
-.   1: Δ =    +239.05  sum_log_prob =   -88152.2  prev =   -88391.2  'I4'  (0.716s)
-.   2: Δ =   +162.699  sum_log_prob =   -87989.5  prev =   -88152.2  'I4'  (0.764s)
-.   3: Δ =   +61.3279  sum_log_prob =   -87928.1  prev =   -87989.5  'I4'  (0.783s)
-.   4: Δ =   +62.9232  sum_log_prob =   -87865.2  prev =   -87928.1  'I4'  (0.794s)
-.   5: Δ =   +94.8155  sum_log_prob =   -87770.4  prev =   -87865.2  'I4'  (0.845s)
-.   6: Δ =   +44.3211  sum_log_prob =   -87726.1  prev =   -87770.4  'I4'  (0.679s)
-.   7: Δ =   +41.1967  sum_log_prob =   -87684.9  prev =   -87726.1  'I4'  (0.689s)
-.   8: Δ =   +63.6956  sum_log_prob =   -87621.2  prev =   -87684.9  'I4'  (0.707s)
-.   9: Δ =    +45.511  sum_log_prob =   -87575.7  prev =   -87621.2  'I4'  (0.672s)
-.  10: Δ =   +63.4624  sum_log_prob =   -87512.2  prev =   -87575.7  'I4'  (0.712s)
+.   1: Δ =   +335.319  sum_log_prob =   -87599.1  prev =   -87934.4  'I4'  (1.289s)
+.   2: Δ =   +61.5537  sum_log_prob =   -87537.5  prev =   -87599.1  'I4'  (1.294s)
+.   3: Δ =   +43.3162  sum_log_prob =   -87494.2  prev =   -87537.5  'I4'  (1.288s)
+.   4: Δ =   +35.4573  sum_log_prob =   -87458.8  prev =   -87494.2  'I4'  (1.286s)
+.   5: Δ =   +47.6355  sum_log_prob =   -87411.1  prev =   -87458.8  'I4'  (1.286s)
+.   6: Δ =   +74.7436  sum_log_prob =   -87336.4  prev =   -87411.1  'I4'  (1.236s)
+.   7: Δ =   +150.343  sum_log_prob =     -87186  prev =   -87336.4  'I4'  (1.158s)
+.   8: Δ =   +82.6585  sum_log_prob =   -87103.4  prev =     -87186  'I4'  (1.157s)
+.   9: Δ =   +60.7798  sum_log_prob =   -87042.6  prev =   -87103.4  'I4'  (1.150s)
+.  10: Δ =   +25.5757  sum_log_prob =     -87017  prev =   -87042.6  'I4'  (1.179s)
 
 
-	Model: data/hmms/N12__M2048_t3__a0.3_I10/I4.hmm   className: 'I4'
-	N=12 M=2048 type: cascade-3
+	Model: data/hmms/N20__M2048_t3__a0.3_I10/I4.hmm   className: 'I4'
+	N=20 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 37
 	        auto value: 0.3
 	      #refinements: 10
-	          Σ log(P): -87512.2
-=> training took 7.596s     class=I4
+	          Σ log(P): -87017
+=> training took 13.111s     class=I4
 

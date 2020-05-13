@@ -2,9 +2,6 @@
 
 - exerc01: updated summary.csv with multiple runs for various values
   of N, M, val_auto (a), and maximum number of iterations (I).
-  Generated with:
-
-        ./hmm-exercise.sh
 
 
 2020-03

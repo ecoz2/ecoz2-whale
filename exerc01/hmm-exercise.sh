@@ -1,7 +1,7 @@
 function main() {
   main_start=$SECONDS
 
-  for N in 2 3 4 5 6 7 8 9 10 11 12; do
+  for N in $(seq 1 20); do
     for M in 512 1024 2048; do
       for A in 0.3; do
         for I in 0 1 2 5 10; do

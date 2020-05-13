@@ -12,30 +12,30 @@ epsilon = 1e-05
   244: data/sequences/TRAIN/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9941.566_9943.761.seq
   245: data/sequences/TRAIN/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9956.758_9958.146.seq
 
-N=12 M=2048 type=3  #sequences = 246  max_T=307
+N=20 M=2048 type=3  #sequences = 246  max_T=307
 val_auto = 0.3   log=-1.20397   max_iterations=10
 estimating initial B matrix ...  (given max_T=307)
 num_not_emitting_states=0
-initial B matrix took 0.509s
+initial B matrix took 1.687s
 refinement info prepared
-.   1: Δ =   +1754.81  sum_log_prob =    -186661  prev =    -188416  'G2'  (1.740s)
-.   2: Δ =   +1968.91  sum_log_prob =    -184692  prev =    -186661  'G2'  (1.703s)
-.   3: Δ =    +1894.2  sum_log_prob =    -182798  prev =    -184692  'G2'  (1.757s)
-.   4: Δ =    +3047.4  sum_log_prob =    -179751  prev =    -182798  'G2'  (1.857s)
-.   5: Δ =   +2975.08  sum_log_prob =    -176776  prev =    -179751  'G2'  (1.814s)
-.   6: Δ =   +4038.49  sum_log_prob =    -172737  prev =    -176776  'G2'  (1.746s)
-.   7: Δ =   +3228.03  sum_log_prob =    -169509  prev =    -172737  'G2'  (1.703s)
-.   8: Δ =   +2148.85  sum_log_prob =    -167360  prev =    -169509  'G2'  (1.719s)
-.   9: Δ =   +2025.14  sum_log_prob =    -165335  prev =    -167360  'G2'  (1.723s)
-.  10: Δ =   +2343.06  sum_log_prob =    -162992  prev =    -165335  'G2'  (1.796s)
+.   1: Δ =   +2597.84  sum_log_prob =    -184560  prev =    -187158  'G2'  (3.217s)
+.   2: Δ =   +1052.35  sum_log_prob =    -183508  prev =    -184560  'G2'  (3.211s)
+.   3: Δ =   +823.019  sum_log_prob =    -182685  prev =    -183508  'G2'  (3.168s)
+.   4: Δ =   +1698.19  sum_log_prob =    -180986  prev =    -182685  'G2'  (3.120s)
+.   5: Δ =   +2630.92  sum_log_prob =    -178355  prev =    -180986  'G2'  (3.058s)
+.   6: Δ =    +3528.1  sum_log_prob =    -174827  prev =    -178355  'G2'  (3.171s)
+.   7: Δ =   +4480.88  sum_log_prob =    -170346  prev =    -174827  'G2'  (2.980s)
+.   8: Δ =   +3431.05  sum_log_prob =    -166915  prev =    -170346  'G2'  (3.096s)
+.   9: Δ =   +1714.99  sum_log_prob =    -165200  prev =    -166915  'G2'  (3.185s)
+.  10: Δ =   +1699.77  sum_log_prob =    -163501  prev =    -165200  'G2'  (3.063s)
 
 
-	Model: data/hmms/N12__M2048_t3__a0.3_I10/G2.hmm   className: 'G2'
-	N=12 M=2048 type: cascade-3
+	Model: data/hmms/N20__M2048_t3__a0.3_I10/G2.hmm   className: 'G2'
+	N=20 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 246
 	        auto value: 0.3
 	      #refinements: 10
-	          Σ log(P): -162992
-=> training took 18.074s     class=G2
+	          Σ log(P): -163501
+=> training took 32.968s     class=G2
 

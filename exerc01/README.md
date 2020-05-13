@@ -416,3 +416,15 @@ Some observations:
   classes have in general a low number of test instances, that is, a
   relatively low number of corresponding training instances 
   (see note about the `-s 0.8` option above).
+
+
+## Some parameter exploration
+
+    cd exerc1/
+    ./hmm-exercise.sh
+
+Plot parallel coordinates:
+
+    python summary-parallel.py
+
+![](summary-parallel.png)

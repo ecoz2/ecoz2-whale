@@ -12,30 +12,30 @@ epsilon = 1e-05
   258: data/sequences/TRAIN/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9995.386_9996.384.seq
   259: data/sequences/TRAIN/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9998.063_9998.941.seq
 
-N=12 M=2048 type=3  #sequences = 260  max_T=178
+N=20 M=2048 type=3  #sequences = 260  max_T=178
 val_auto = 0.3   log=-1.20397   max_iterations=10
 estimating initial B matrix ...  (given max_T=178)
 num_not_emitting_states=0
-initial B matrix took 0.296s
+initial B matrix took 0.943s
 refinement info prepared
-.   1: Δ =   +1307.65  sum_log_prob =    -117179  prev =    -118487  'I3'  (1.010s)
-.   2: Δ =   +476.691  sum_log_prob =    -116702  prev =    -117179  'I3'  (1.043s)
-.   3: Δ =   +334.655  sum_log_prob =    -116368  prev =    -116702  'I3'  (1.088s)
-.   4: Δ =   +250.512  sum_log_prob =    -116117  prev =    -116368  'I3'  (1.143s)
-.   5: Δ =   +199.301  sum_log_prob =    -115918  prev =    -116117  'I3'  (0.986s)
-.   6: Δ =   +165.919  sum_log_prob =    -115752  prev =    -115918  'I3'  (0.971s)
-.   7: Δ =   +145.297  sum_log_prob =    -115607  prev =    -115752  'I3'  (0.947s)
-.   8: Δ =   +141.303  sum_log_prob =    -115465  prev =    -115607  'I3'  (0.940s)
-.   9: Δ =   +162.232  sum_log_prob =    -115303  prev =    -115465  'I3'  (0.665s)
-.  10: Δ =    +198.97  sum_log_prob =    -115104  prev =    -115303  'I3'  (0.578s)
+.   1: Δ =   +1937.56  sum_log_prob =    -114933  prev =    -116871  'I3'  (1.847s)
+.   2: Δ =   +422.135  sum_log_prob =    -114511  prev =    -114933  'I3'  (1.793s)
+.   3: Δ =   +414.746  sum_log_prob =    -114096  prev =    -114511  'I3'  (1.807s)
+.   4: Δ =    +429.29  sum_log_prob =    -113667  prev =    -114096  'I3'  (1.784s)
+.   5: Δ =   +345.764  sum_log_prob =    -113321  prev =    -113667  'I3'  (1.786s)
+.   6: Δ =   +352.195  sum_log_prob =    -112969  prev =    -113321  'I3'  (1.637s)
+.   7: Δ =   +293.177  sum_log_prob =    -112676  prev =    -112969  'I3'  (1.648s)
+.   8: Δ =   +350.619  sum_log_prob =    -112325  prev =    -112676  'I3'  (1.514s)
+.   9: Δ =   +294.742  sum_log_prob =    -112030  prev =    -112325  'I3'  (1.044s)
+.  10: Δ =   +433.728  sum_log_prob =    -111597  prev =    -112030  'I3'  (0.975s)
 
 
-	Model: data/hmms/N12__M2048_t3__a0.3_I10/I3.hmm   className: 'I3'
-	N=12 M=2048 type: cascade-3
+	Model: data/hmms/N20__M2048_t3__a0.3_I10/I3.hmm   className: 'I3'
+	N=20 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 260
 	        auto value: 0.3
 	      #refinements: 10
-	          Σ log(P): -115104
-=> training took 9.671s     class=I3
+	          Σ log(P): -111597
+=> training took 16.786s     class=I3
 

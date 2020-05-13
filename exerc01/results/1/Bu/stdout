@@ -12,30 +12,30 @@ epsilon = 1e-05
    33: data/sequences/TRAIN/M2048/Bu/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__689.487_690.5922.seq
    34: data/sequences/TRAIN/M2048/Bu/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__977.9565_980.5652.seq
 
-N=12 M=2048 type=3  #sequences = 35  max_T=188
+N=20 M=2048 type=3  #sequences = 35  max_T=188
 val_auto = 0.3   log=-1.20397   max_iterations=10
 estimating initial B matrix ...  (given max_T=188)
-num_not_emitting_states=4
-initial B matrix took 0.057s
+num_not_emitting_states=2
+initial B matrix took 0.162s
 refinement info prepared
-.   1: Δ =   +309.898  sum_log_prob =   -19866.8  prev =   -20176.7  'Bu'  (0.152s)
-.   2: Δ =   +144.359  sum_log_prob =   -19722.5  prev =   -19866.8  'Bu'  (0.167s)
-.   3: Δ =   +148.901  sum_log_prob =   -19573.6  prev =   -19722.5  'Bu'  (0.177s)
-.   4: Δ =   +61.8779  sum_log_prob =   -19511.7  prev =   -19573.6  'Bu'  (0.159s)
-.   5: Δ =   +78.2573  sum_log_prob =   -19433.4  prev =   -19511.7  'Bu'  (0.181s)
-.   6: Δ =   +82.9058  sum_log_prob =   -19350.5  prev =   -19433.4  'Bu'  (0.194s)
-.   7: Δ =   +49.4269  sum_log_prob =   -19301.1  prev =   -19350.5  'Bu'  (0.189s)
-.   8: Δ =   +65.6005  sum_log_prob =   -19235.5  prev =   -19301.1  'Bu'  (0.196s)
-.   9: Δ =   +27.5277  sum_log_prob =     -19208  prev =   -19235.5  'Bu'  (0.195s)
-.  10: Δ =    +19.308  sum_log_prob =   -19188.6  prev =     -19208  'Bu'  (0.194s)
+.   1: Δ =   +360.906  sum_log_prob =   -19449.3  prev =   -19810.2  'Bu'  (0.289s)
+.   2: Δ =   +88.2927  sum_log_prob =     -19361  prev =   -19449.3  'Bu'  (0.275s)
+.   3: Δ =   +50.1161  sum_log_prob =   -19310.9  prev =     -19361  'Bu'  (0.293s)
+.   4: Δ =   +78.2982  sum_log_prob =   -19232.6  prev =   -19310.9  'Bu'  (0.302s)
+.   5: Δ =   +114.908  sum_log_prob =   -19117.7  prev =   -19232.6  'Bu'  (0.298s)
+.   6: Δ =   +94.2433  sum_log_prob =   -19023.5  prev =   -19117.7  'Bu'  (0.312s)
+.   7: Δ =   +81.3615  sum_log_prob =   -18942.1  prev =   -19023.5  'Bu'  (0.328s)
+.   8: Δ =   +166.028  sum_log_prob =   -18776.1  prev =   -18942.1  'Bu'  (0.326s)
+.   9: Δ =   +116.553  sum_log_prob =   -18659.5  prev =   -18776.1  'Bu'  (0.343s)
+.  10: Δ =   +37.5733  sum_log_prob =   -18621.9  prev =   -18659.5  'Bu'  (0.390s)
 
 
-	Model: data/hmms/N12__M2048_t3__a0.3_I10/Bu.hmm   className: 'Bu'
-	N=12 M=2048 type: cascade-3
+	Model: data/hmms/N20__M2048_t3__a0.3_I10/Bu.hmm   className: 'Bu'
+	N=20 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 35
 	        auto value: 0.3
 	      #refinements: 10
-	          Σ log(P): -19188.6
-=> training took 1.863s     class=Bu
+	          Σ log(P): -18621.9
+=> training took 3.322s     class=Bu
 
