@@ -182,9 +182,9 @@ and along with a few other high accuracy combinations:
 ![](summary-parallel2.png)
 
 With `2048` clearly as the best `M` parameter, these plots also suggest
-that low values for `N` and `I` provide the best performance for the
-dataset under experimentation. In other words, higher values for these
-parameters seem to incur overfitting.
+that low values for `N` and `I` in general tend to provide better
+performance for the dataset under experimentation.
+In other words, higher values for these parameters seem to incur overfitting.
 
 What follows is a closer examination of the performance for the particular
 set of parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
