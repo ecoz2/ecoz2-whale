@@ -186,7 +186,7 @@ With `2048` clearly as the best `M` parameter, these plots also suggest
 that low values for `N` and `I` provide the best performance for the
 dataset under experimentation.
 
-What follows is a closer examination of the performance of the particular
+What follows is a closer examination of the performance for the particular
 set of parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
 on the test instances.
  
