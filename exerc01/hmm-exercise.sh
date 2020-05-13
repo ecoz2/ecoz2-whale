@@ -1,3 +1,11 @@
+#
+# This script relies on:
+# - ecoz2 - https://github.com/ecoz2/ecoz2rs
+# - GNU Parallel - https://www.gnu.org/software/parallel/
+# - jq - https://stedolan.github.io/jq/
+# - Typical *nix commands
+#
+
 function main() {
   main_start=$SECONDS
 

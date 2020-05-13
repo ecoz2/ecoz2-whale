@@ -161,7 +161,7 @@ classification performance for various values of:
 > The parameter `-a` is fixed to `0.3` in this exploration.
 > This parameter is used by the algorithm to stop the iterative process
 > if the increment of the probability of the model acounting for the
-> training sequences is not significant enough.)
+> training sequences is not significant enough.
 
 The complete exercise has been done with the help of [this script](hmm-exercise.sh).
 
@@ -181,7 +181,7 @@ highest test average accuracies:
 
 With `2048` clearly as the best `M` parameter, these plots also suggest
 that low values for `N` and `I` provide the best performance for the
-dataset at hand.
+dataset under experimentation.
 
 What follows is a closer examination of the performance of the particular
 set of training parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
