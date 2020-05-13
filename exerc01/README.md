@@ -65,8 +65,9 @@ $ rm -rf data/signals/\?
 ecoz2 lpc -P 36 -W 45 -O 15 -m 10 -s 0.8 data/signals
 ```
 
-The `-s 0.8` option splits the generated predictor files into
-two categories (TRAIN and TEST) for each class:
+The `-s 0.8` option splits the generated predictor files into two sets,
+one with 80% of the files for training (under `data/predictors/TRAIN/`),
+and the other 20% for testing (under `data/predictors/TEST/`) for each class.
 
 ```
 $ ls data/predictors
