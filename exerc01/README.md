@@ -251,8 +251,8 @@ Some observations:
 - Class "A" seems pretty well modeled given the 98.04% correct classification
   on 100 out of 102 test instances
 
-    - 1 instance misclassified as "I" (class number 14)
-    - 1 instance misclassified as "I3" (class number 16)
+    - 1 instance misclassified as "I" (class id 14)
+    - 1 instance misclassified as "I3" (class id 16)
 
 - Class "F" also pretty well modeled with 94.03% accuracy on 67 instances
 
