@@ -177,7 +177,7 @@ average accuracy is highlighted in the following:
 
 ![](summary-parallel1.png)
 
-and along with few others:
+and along with a few other high accuracy combinations:
 
 ![](summary-parallel2.png)
 
