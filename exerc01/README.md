@@ -260,4 +260,4 @@ Some observations:
   classes have in general a very low number of test instances,
   that is, a relatively low number of corresponding training instances
   (see note about the `-s 0.8` option above).
-  So, we may be just be facing lack of enough data to train the models.
+  So, we may just be facing lack of enough data to train the models.
