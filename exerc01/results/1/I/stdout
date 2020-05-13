@@ -12,30 +12,22 @@ epsilon = 1e-05
   375: data/sequences/TRAIN/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9951.553_9952.007.seq
   376: data/sequences/TRAIN/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9954.2_9954.533.seq
 
-N=20 M=2048 type=3  #sequences = 377  max_T=53
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 377  max_T=53
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=53)
 num_not_emitting_states=0
-initial B matrix took 0.588s
+initial B matrix took 0.006s
 refinement info prepared
-.   1: Δ =   +3014.69  sum_log_prob =   -68604.8  prev =   -71619.5  'I'  (1.308s)
-.   2: Δ =   +962.551  sum_log_prob =   -67642.3  prev =   -68604.8  'I'  (1.324s)
-.   3: Δ =   +538.276  sum_log_prob =     -67104  prev =   -67642.3  'I'  (1.348s)
-.   4: Δ =   +524.116  sum_log_prob =   -66579.9  prev =     -67104  'I'  (1.340s)
-.   5: Δ =   +588.575  sum_log_prob =   -65991.3  prev =   -66579.9  'I'  (1.261s)
-.   6: Δ =   +511.256  sum_log_prob =     -65480  prev =   -65991.3  'I'  (1.282s)
-.   7: Δ =   +387.677  sum_log_prob =   -65092.4  prev =     -65480  'I'  (1.293s)
-.   8: Δ =   +282.051  sum_log_prob =   -64810.3  prev =   -65092.4  'I'  (1.283s)
-.   9: Δ =    +225.83  sum_log_prob =   -64584.5  prev =   -64810.3  'I'  (1.323s)
-.  10: Δ =   +219.961  sum_log_prob =   -64364.5  prev =   -64584.5  'I'  (1.282s)
+.   1: Δ =     +413.8  sum_log_prob =   -74060.3  prev =   -74474.1  'I'  (0.180s)
+.   2: Δ =   +318.846  sum_log_prob =   -73741.4  prev =   -74060.3  'I'  (0.259s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/I.hmm   className: 'I'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/I.hmm   className: 'I'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 377
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -64364.5
-=> training took 13.636s     class=I
+	      #refinements: 2
+	          Σ log(P): -73741.4
+=> training took 0.446s     class=I
 

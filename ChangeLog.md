@@ -1,7 +1,7 @@
 2020-05
 
-- exerc01: updated summary.csv with multiple runs for various values
-  of N, M, val_auto (a), and maximum number of iterations (I).
+- general update of the exerc01 exercise,
+  see [exerc01/README.md](exerc01/README.md).
 
 
 2020-03

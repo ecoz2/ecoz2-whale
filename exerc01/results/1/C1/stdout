@@ -12,30 +12,22 @@ epsilon = 1e-05
    11: data/sequences/TRAIN/M2048/C1/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__6099.837_6101.542.seq
    12: data/sequences/TRAIN/M2048/C1/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__973.5702_975.84393.seq
 
-N=20 M=2048 type=3  #sequences = 13  max_T=181
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 13  max_T=181
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=181)
 num_not_emitting_states=0
-initial B matrix took 0.080s
+initial B matrix took 0.002s
 refinement info prepared
-.   1: Δ =   +104.697  sum_log_prob =    -8494.4  prev =    -8599.1  'C1'  (0.130s)
-.   2: Δ =   +16.7055  sum_log_prob =    -8477.7  prev =    -8494.4  'C1'  (0.139s)
-.   3: Δ =   +18.1098  sum_log_prob =   -8459.59  prev =    -8477.7  'C1'  (0.153s)
-.   4: Δ =   +14.6174  sum_log_prob =   -8444.97  prev =   -8459.59  'C1'  (0.137s)
-.   5: Δ =   +16.3843  sum_log_prob =   -8428.58  prev =   -8444.97  'C1'  (0.143s)
-.   6: Δ =   +24.5687  sum_log_prob =   -8404.02  prev =   -8428.58  'C1'  (0.136s)
-.   7: Δ =   +17.0514  sum_log_prob =   -8386.96  prev =   -8404.02  'C1'  (0.153s)
-.   8: Δ =   +7.83341  sum_log_prob =   -8379.13  prev =   -8386.96  'C1'  (0.147s)
-.   9: Δ =   +4.41388  sum_log_prob =   -8374.72  prev =   -8379.13  'C1'  (0.140s)
-.  10: Δ =   +2.64159  sum_log_prob =   -8372.07  prev =   -8374.72  'C1'  (0.140s)
+.   1: Δ =    +14.575  sum_log_prob =   -8977.31  prev =   -8991.89  'C1'  (0.019s)
+.   2: Δ =   +33.4521  sum_log_prob =   -8943.86  prev =   -8977.31  'C1'  (0.018s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/C1.hmm   className: 'C1'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/C1.hmm   className: 'C1'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 13
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -8372.07
-=> training took 1.500s     class=C1
+	      #refinements: 2
+	          Σ log(P): -8943.86
+=> training took 0.039s     class=C1
 

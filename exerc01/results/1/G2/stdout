@@ -12,30 +12,22 @@ epsilon = 1e-05
   244: data/sequences/TRAIN/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9941.566_9943.761.seq
   245: data/sequences/TRAIN/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9956.758_9958.146.seq
 
-N=20 M=2048 type=3  #sequences = 246  max_T=307
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 246  max_T=307
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=307)
 num_not_emitting_states=0
-initial B matrix took 1.687s
+initial B matrix took 0.016s
 refinement info prepared
-.   1: Δ =   +2597.84  sum_log_prob =    -184560  prev =    -187158  'G2'  (3.217s)
-.   2: Δ =   +1052.35  sum_log_prob =    -183508  prev =    -184560  'G2'  (3.211s)
-.   3: Δ =   +823.019  sum_log_prob =    -182685  prev =    -183508  'G2'  (3.168s)
-.   4: Δ =   +1698.19  sum_log_prob =    -180986  prev =    -182685  'G2'  (3.120s)
-.   5: Δ =   +2630.92  sum_log_prob =    -178355  prev =    -180986  'G2'  (3.058s)
-.   6: Δ =    +3528.1  sum_log_prob =    -174827  prev =    -178355  'G2'  (3.171s)
-.   7: Δ =   +4480.88  sum_log_prob =    -170346  prev =    -174827  'G2'  (2.980s)
-.   8: Δ =   +3431.05  sum_log_prob =    -166915  prev =    -170346  'G2'  (3.096s)
-.   9: Δ =   +1714.99  sum_log_prob =    -165200  prev =    -166915  'G2'  (3.185s)
-.  10: Δ =   +1699.77  sum_log_prob =    -163501  prev =    -165200  'G2'  (3.063s)
+.   1: Δ =   +790.078  sum_log_prob =    -189975  prev =    -190765  'G2'  (0.443s)
+.   2: Δ =   +1373.39  sum_log_prob =    -188602  prev =    -189975  'G2'  (0.740s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/G2.hmm   className: 'G2'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm   className: 'G2'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 246
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -163501
-=> training took 32.968s     class=G2
+	      #refinements: 2
+	          Σ log(P): -188602
+=> training took 1.201s     class=G2
 

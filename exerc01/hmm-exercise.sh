@@ -10,6 +10,7 @@ function main() {
       done
     done
   done
+  #one_exercise 3 2048 0.3 2
 
   main_end=$SECONDS
   main_duration=$((main_end - main_start))

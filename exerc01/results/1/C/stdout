@@ -12,30 +12,22 @@ epsilon = 1e-05
   439: data/sequences/TRAIN/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9795.906_9796.833.seq
   440: data/sequences/TRAIN/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9812.224_9813.896.seq
 
-N=20 M=2048 type=3  #sequences = 441  max_T=225
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 441  max_T=225
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=225)
 num_not_emitting_states=0
-initial B matrix took 2.643s
+initial B matrix took 0.028s
 refinement info prepared
-.   1: Δ =   +2932.58  sum_log_prob =    -338484  prev =    -341416  'C'  (5.190s)
-.   2: Δ =   +1685.21  sum_log_prob =    -336799  prev =    -338484  'C'  (5.505s)
-.   3: Δ =   +1886.18  sum_log_prob =    -334912  prev =    -336799  'C'  (5.355s)
-.   4: Δ =    +1802.5  sum_log_prob =    -333110  prev =    -334912  'C'  (5.249s)
-.   5: Δ =   +2764.32  sum_log_prob =    -330346  prev =    -333110  'C'  (5.222s)
-.   6: Δ =   +3358.94  sum_log_prob =    -326987  prev =    -330346  'C'  (5.273s)
-.   7: Δ =   +3864.75  sum_log_prob =    -323122  prev =    -326987  'C'  (5.183s)
-.   8: Δ =   +4266.86  sum_log_prob =    -318855  prev =    -323122  'C'  (4.944s)
-.   9: Δ =    +3146.8  sum_log_prob =    -315708  prev =    -318855  'C'  (3.568s)
-.  10: Δ =   +2381.95  sum_log_prob =    -313326  prev =    -315708  'C'  (2.578s)
+.   1: Δ =    +2535.3  sum_log_prob =    -344249  prev =    -346784  'C'  (0.981s)
+.   2: Δ =    +1653.8  sum_log_prob =    -342595  prev =    -344249  'C'  (0.781s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/C.hmm   className: 'C'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/C.hmm   className: 'C'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 441
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -313326
-=> training took 50.730s     class=C
+	      #refinements: 2
+	          Σ log(P): -342595
+=> training took 1.793s     class=C
 

@@ -12,30 +12,22 @@ epsilon = 1e-05
    39: data/sequences/TRAIN/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__962.4577_966.9447.seq
    40: data/sequences/TRAIN/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__991.1385_993.9318.seq
 
-N=20 M=2048 type=3  #sequences = 41  max_T=297
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 41  max_T=297
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=297)
 num_not_emitting_states=0
-initial B matrix took 0.231s
+initial B matrix took 0.003s
 refinement info prepared
-.   1: Δ =    +353.25  sum_log_prob =   -29601.4  prev =   -29954.7  'Bd'  (0.414s)
-.   2: Δ =    +243.89  sum_log_prob =   -29357.5  prev =   -29601.4  'Bd'  (0.409s)
-.   3: Δ =   +108.906  sum_log_prob =   -29248.6  prev =   -29357.5  'Bd'  (0.413s)
-.   4: Δ =   +55.7975  sum_log_prob =   -29192.8  prev =   -29248.6  'Bd'  (0.433s)
-.   5: Δ =   +85.3981  sum_log_prob =   -29107.4  prev =   -29192.8  'Bd'  (0.437s)
-.   6: Δ =   +75.1478  sum_log_prob =   -29032.3  prev =   -29107.4  'Bd'  (0.469s)
-.   7: Δ =   +52.8567  sum_log_prob =   -28979.4  prev =   -29032.3  'Bd'  (0.514s)
-.   8: Δ =   +89.2847  sum_log_prob =   -28890.1  prev =   -28979.4  'Bd'  (0.444s)
-.   9: Δ =   +58.6477  sum_log_prob =   -28831.5  prev =   -28890.1  'Bd'  (0.466s)
-.  10: Δ =   +66.7947  sum_log_prob =   -28764.7  prev =   -28831.5  'Bd'  (0.514s)
+.   1: Δ =   +46.1076  sum_log_prob =   -30833.2  prev =   -30879.3  'Bd'  (0.050s)
+.   2: Δ =   +57.7395  sum_log_prob =   -30775.4  prev =   -30833.2  'Bd'  (0.044s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/Bd.hmm   className: 'Bd'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm   className: 'Bd'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 41
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -28764.7
-=> training took 4.749s     class=Bd
+	      #refinements: 2
+	          Σ log(P): -30775.4
+=> training took 0.098s     class=Bd
 

@@ -12,30 +12,22 @@ epsilon = 1e-05
   111: data/sequences/TRAIN/M2048/H/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9867.64_9869.5.seq
   112: data/sequences/TRAIN/M2048/H/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9879.381_9880.954.seq
 
-N=20 M=2048 type=3  #sequences = 113  max_T=292
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 113  max_T=292
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=292)
 num_not_emitting_states=0
-initial B matrix took 0.801s
+initial B matrix took 0.008s
 refinement info prepared
-.   1: Δ =   +1145.52  sum_log_prob =     -80103  prev =   -81248.5  'H'  (1.464s)
-.   2: Δ =   +536.026  sum_log_prob =     -79567  prev =     -80103  'H'  (1.470s)
-.   3: Δ =   +734.864  sum_log_prob =   -78832.1  prev =     -79567  'H'  (1.471s)
-.   4: Δ =    +1006.2  sum_log_prob =   -77825.9  prev =   -78832.1  'H'  (1.439s)
-.   5: Δ =   +460.122  sum_log_prob =   -77365.8  prev =   -77825.9  'H'  (1.433s)
-.   6: Δ =   +322.391  sum_log_prob =   -77043.4  prev =   -77365.8  'H'  (1.401s)
-.   7: Δ =   +238.394  sum_log_prob =     -76805  prev =   -77043.4  'H'  (1.429s)
-.   8: Δ =   +115.156  sum_log_prob =   -76689.9  prev =     -76805  'H'  (1.442s)
-.   9: Δ =   +99.7723  sum_log_prob =   -76590.1  prev =   -76689.9  'H'  (1.470s)
-.  10: Δ =   +264.634  sum_log_prob =   -76325.5  prev =   -76590.1  'H'  (1.429s)
+.   1: Δ =   +329.092  sum_log_prob =     -82728  prev =   -83057.1  'H'  (0.214s)
+.   2: Δ =   +362.537  sum_log_prob =   -82365.4  prev =     -82728  'H'  (0.229s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/H.hmm   className: 'H'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/H.hmm   className: 'H'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 113
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -76325.5
-=> training took 15.256s     class=H
+	      #refinements: 2
+	          Σ log(P): -82365.4
+=> training took 0.453s     class=H
 

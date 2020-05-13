@@ -12,30 +12,22 @@ epsilon = 1e-05
    20: data/sequences/TRAIN/M2048/E1/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4814.402_4815.78.seq
    21: data/sequences/TRAIN/M2048/E1/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4828.9_4830.3076.seq
 
-N=20 M=2048 type=3  #sequences = 22  max_T=103
-val_auto = 0.3   log=-1.20397   max_iterations=10
+N=3 M=2048 type=3  #sequences = 22  max_T=103
+val_auto = 0.3   log=-1.20397   max_iterations=2
 estimating initial B matrix ...  (given max_T=103)
-num_not_emitting_states=2
-initial B matrix took 0.075s
+num_not_emitting_states=0
+initial B matrix took 0.001s
 refinement info prepared
-.   1: Δ =   +200.252  sum_log_prob =   -7092.15  prev =    -7292.4  'E1'  (0.135s)
-.   2: Δ =   +38.5915  sum_log_prob =   -7053.56  prev =   -7092.15  'E1'  (0.135s)
-.   3: Δ =   +66.9845  sum_log_prob =   -6986.57  prev =   -7053.56  'E1'  (0.134s)
-.   4: Δ =    +89.722  sum_log_prob =   -6896.85  prev =   -6986.57  'E1'  (0.131s)
-.   5: Δ =   +77.2105  sum_log_prob =   -6819.64  prev =   -6896.85  'E1'  (0.150s)
-.   6: Δ =   +23.2901  sum_log_prob =   -6796.35  prev =   -6819.64  'E1'  (0.140s)
-.   7: Δ =   +14.8143  sum_log_prob =   -6781.54  prev =   -6796.35  'E1'  (0.150s)
-.   8: Δ =   +5.96269  sum_log_prob =   -6775.57  prev =   -6781.54  'E1'  (0.159s)
-.   9: Δ =   +5.69035  sum_log_prob =   -6769.88  prev =   -6775.57  'E1'  (0.151s)
-.  10: Δ =   +5.17742  sum_log_prob =    -6764.7  prev =   -6769.88  'E1'  (0.155s)
+.   1: Δ =   +29.8996  sum_log_prob =    -7701.5  prev =    -7731.4  'E1'  (0.014s)
+.   2: Δ =   +22.7764  sum_log_prob =   -7678.73  prev =    -7701.5  'E1'  (0.015s)
 
 
-	Model: data/hmms/N20__M2048_t3__a0.3_I10/E1.hmm   className: 'E1'
-	N=20 M=2048 type: cascade-3
+	Model: data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm   className: 'E1'
+	N=3 M=2048 type: cascade-3
 	restriction: 1e-05
 	        #sequences: 22
 	        auto value: 0.3
-	      #refinements: 10
-	          Σ log(P): -6764.7
-=> training took 1.518s     class=E1
+	      #refinements: 2
+	          Σ log(P): -7678.73
+=> training took 0.031s     class=E1
 
