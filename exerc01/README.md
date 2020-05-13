@@ -184,7 +184,7 @@ that low values for `N` and `I` provide the best performance for the
 dataset under experimentation.
 
 What follows is a closer examination of the performance of the particular
-set of training parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
+set of parameters, `N = 3`, `M = 2048`, `I = 2`, `a = 0.3`,
 on the test instances.
  
 Confusion matrix:
@@ -241,9 +241,12 @@ with rows sorted by decreasing accuracy:
   I4    17       44.44%     9          4   1   1   2   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0
 
        TOTAL     79.43%   1060        842 117  42  23  12   7   2   5   3   4   0   1   1   0   1   0   0   0   0   0
+  avg_accuracy   76.19%       
 ```
 
 Some observations:
+
+- Overall average accuracy: 76.19%
 
 - Class "A" seems pretty well modeled given the 98.04% correct classification
   on 100 out of 102 test instances
