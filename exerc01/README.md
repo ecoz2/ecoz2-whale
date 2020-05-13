@@ -170,10 +170,12 @@ With parallel coordinates the summary can be visualized as follows:
 
     python summary-parallel.py
 
+![](summary-parallel.png)
+
 The parameter combination with the highest test average accuracy is
 highlighted in this plot:
 
-![](summary-parallel.png)
+![](summary-parallel1.png)
 
 while the following shows a few of the combinations corresponding to the
 highest test average accuracies:
