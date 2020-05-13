@@ -10,7 +10,7 @@ function main() {
   main_start=$SECONDS
 
   for N in $(seq 1 20); do
-    for M in 512 1024 2048; do
+    for M in 512 1024 2048 4096; do
       for A in 0.3; do
         for I in 0 1 2 5 10; do
           one_exercise ${N} ${M} ${A} ${I}
