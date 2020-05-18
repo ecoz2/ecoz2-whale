@@ -168,7 +168,7 @@ The complete exercise has been done with the help of [this script](hmm-exercise.
 
 With parallel coordinates the summary can be visualized as follows:
 
-    python summary-parallel.py
+    python summary-parallel.py summary.csv
 
 ![](summary-parallel.png)
 
