@@ -67,10 +67,14 @@ function one_exercise() {
   duration_string "**TRAINING COMPLETED**" $train_duration
   echo " N=$N  M=$M  a=$a  I=$I"
 
+  # set as convenient:
+  #SHOW_RANKED=--show-ranked
+  SHOW_RANKED=
+
   test_start=$SECONDS
   echo
   echo "CLASSIFYING TRAINING SEQUENCES"
-  cmd="ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} --sequences data/sequences/TRAIN/M${M}"
+  cmd="ecoz2 hmm classify ${SHOW_RANKED} --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} --sequences data/sequences/TRAIN/M${M}"
   echo "$cmd"
   $cmd
 
@@ -79,7 +83,7 @@ function one_exercise() {
 
   echo
   echo "CLASSIFYING TEST SEQUENCES"
-  cmd="ecoz2 hmm classify --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} --sequences data/sequences/TEST/M${M}"
+  cmd="ecoz2 hmm classify ${SHOW_RANKED} --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} --sequences data/sequences/TEST/M${M}"
   echo "$cmd"
   $cmd
 
