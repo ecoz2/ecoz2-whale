@@ -10,7 +10,7 @@ def do_plot(csv_filename):
         selection = summary[['N', 'M', 'I', 'Test avgAc']]
 
     # ad hoc for other tests:
-    elif csv_filename == 'summary-nbayes.csv':
+    elif csv_filename == 'nb-summary.csv':
         selection = summary[['M', 'Test avgAc']]
 
     else:
