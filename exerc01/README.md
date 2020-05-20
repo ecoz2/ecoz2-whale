@@ -264,3 +264,19 @@ Some observations:
   that is, a relatively low number of corresponding training instances
   (see note about the `-s 0.8` option above).
   So, we may just be facing lack of enough data to train the models.
+
+----
+
+From a similar exercise using the same values above for the training
+parameters, [here is the output](hmm-exercise-classification-ranked.txt)
+when using the `--show-ranked` option:
+for each mis-classified sequence, the report shows the HMM models in order
+of decreasing log-probability. For example:
+
+    data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8670.551_8671.996.seq: 'Bd'
+      [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.456433e+02  : 'Bm'
+      [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -6.646479e+02  : 'I4'
+      [ 2] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -6.743393e+02  : 'Bd'
+
+indicates that this 'Bd' instance was mis-classified as 'Bm', with 'I4'
+in second place and the correct model in third place.
