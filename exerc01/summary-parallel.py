@@ -11,9 +11,10 @@ def do_plot(csv_filename):
 
     # ad hoc for other tests:
     elif csv_filename == 'nb-summary.csv':
-        selection = summary[['M', 'Test avgAc']]
+        selection = summary[['M', 'Train avgAc', 'Test avgAc']]
+
     elif csv_filename == 'mm-summary.csv':
-        selection = summary[['M', 'Test avgAc']]
+        selection = summary[['M', 'Train avgAc', 'Test avgAc']]
 
     else:
         print('unrecognized file: {}'.format(csv_filename))
