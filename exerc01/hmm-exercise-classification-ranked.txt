@@ -1,0 +1,1461 @@
+$ ./hmm-exercise.sh
+-- hmm-exercise.sh --
+  N = 3  M = 2048  a = 0.3  I = 2
+
+
+CLASSIFYING TEST SEQUENCES
+ecoz2 hmm classify --show-ranked --models data/hmms/N3__M2048_t3__a0.3_I2 --sequences data/sequences/TEST/M2048
+ECOZ2 C version: 0.3.63
+number of HMM models: 20  number of sequences: 1060
+show_ranked = true
+
+Loading models:
+ 0: data/hmms/N3__M2048_t3__a0.3_I2/A.hmm
+ 1: data/hmms/N3__M2048_t3__a0.3_I2/B.hmm
+ 2: data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm
+ 3: data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm
+ 4: data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm
+ 5: data/hmms/N3__M2048_t3__a0.3_I2/C.hmm
+ 6: data/hmms/N3__M2048_t3__a0.3_I2/C1.hmm
+ 7: data/hmms/N3__M2048_t3__a0.3_I2/D.hmm
+ 8: data/hmms/N3__M2048_t3__a0.3_I2/E.hmm
+ 9: data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm
+10: data/hmms/N3__M2048_t3__a0.3_I2/F.hmm
+11: data/hmms/N3__M2048_t3__a0.3_I2/G.hmm
+12: data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm
+13: data/hmms/N3__M2048_t3__a0.3_I2/H.hmm
+14: data/hmms/N3__M2048_t3__a0.3_I2/I.hmm
+15: data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm
+16: data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm
+17: data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm
+18: data/hmms/N3__M2048_t3__a0.3_I2/M.hmm
+19: data/hmms/N3__M2048_t3__a0.3_I2/P.hmm
+
+*********************************_
+data/sequences/TEST/M2048/A/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15773.8_15774.98.seq: 'A'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.424048e+02  : 'Bm'
+  [ 1] * < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.550973e+02  : 'A'
+
+*********************_
+data/sequences/TEST/M2048/A/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3436.243_3437.3687.seq: 'A'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -5.774929e+02  : 'I3'
+  [ 1] * < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -5.966136e+02  : 'A'
+
+***************************************_
+data/sequences/TEST/M2048/A/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8289.519_8290.876.seq: 'A'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -5.819304e+02  : 'I'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.993608e+02  : 'E'
+  [ 2]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -6.275015e+02  : 'C'
+  [ 3]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -6.516632e+02  : 'I2'
+  [ 4]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.607309e+02  : 'G2'
+  [ 5]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -6.807981e+02  : 'F'
+  [ 6]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -6.844451e+02  : 'D'
+  [ 7] * < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -7.021143e+02  : 'A'
+
+******_
+data/sequences/TEST/M2048/B/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1102.666_1103.1608.seq: 'B'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -1.741430e+02  : 'Bu'
+  [ 1]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -2.058802e+02  : 'Bd'
+  [ 2]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.070989e+02  : 'I3'
+  [ 3]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.117885e+02  : 'Bm'
+  [ 4]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.418043e+02  : 'I4'
+  [ 5]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.575748e+02  : 'I2'
+  [ 6]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.611426e+02  : 'I'
+  [ 7]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -2.615795e+02  : 'D'
+  [ 8]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -2.637291e+02  : 'A'
+  [ 9] * < 1>  data/hmms/N3__M2048_t3__a0.3_I2/B.hmm                        : -2.655012e+02  : 'B'
+
+*_
+data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10462.341_10463.3545.seq: 'Bd'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.855793e+02  : 'I3'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -5.105151e+02  : 'I2'
+  [ 2]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -5.167112e+02  : 'Bm'
+  [ 3]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -5.567517e+02  : 'I4'
+  [ 4] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -6.125945e+02  : 'Bd'
+
+_
+data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10465.186_10466.577.seq: 'Bd'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.024127e+02  : 'Bm'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -6.619336e+02  : 'I3'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -6.972461e+02  : 'I2'
+  [ 3]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -7.425011e+02  : 'I4'
+  [ 4]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -8.118919e+02  : 'H'
+  [ 5]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -8.345961e+02  : 'P'
+  [ 6]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -8.436425e+02  : 'C'
+  [ 7] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -8.465927e+02  : 'Bd'
+
+_
+data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1634.6011_1637.0713.seq: 'Bd'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -9.686611e+02  : 'Bu'
+  [ 1] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -1.006233e+03  : 'Bd'
+
+****_
+data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8670.551_8671.996.seq: 'Bd'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.456433e+02  : 'Bm'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -6.646479e+02  : 'I4'
+  [ 2] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -6.743393e+02  : 'Bd'
+
+_
+data/sequences/TEST/M2048/Bd/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__939.5186_942.54285.seq: 'Bd'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.317464e+03  : 'I3'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -1.343113e+03  : 'I4'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.403586e+03  : 'I2'
+  [ 3]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.405650e+03  : 'I'
+  [ 4] * < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -1.425989e+03  : 'Bd'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10053.018_10054.318.seq: 'Bm'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -5.041935e+02  : 'I4'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -5.187611e+02  : 'I3'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -5.475712e+02  : 'I2'
+  [ 3] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.223765e+02  : 'Bm'
+
+*********_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10974.854_10975.943.seq: 'Bm'
+  [ 0]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.258944e+02  : 'A'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -5.842075e+02  : 'I3'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -5.887237e+02  : 'Bm'
+
+*_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11120.091_11120.802.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.190700e+02  : 'I3'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.213530e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11122.224_11122.874.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.785286e+02  : 'I3'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.827576e+02  : 'I2'
+  [ 2]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.922471e+02  : 'P'
+  [ 3]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -3.065265e+02  : 'H'
+  [ 4]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.106424e+02  : 'I4'
+  [ 5]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -3.171603e+02  : 'M'
+  [ 6] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.173016e+02  : 'Bm'
+
+********_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12037.872_12038.295.seq: 'Bm'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -1.640074e+02  : 'M'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.662360e+02  : 'Bm'
+
+*_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12666.798_12667.403.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.506241e+02  : 'I3'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.515966e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12897.335_12898.461.seq: 'Bm'
+  [ 0]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.660613e+02  : 'A'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -5.463341e+02  : 'I2'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -5.580529e+02  : 'Bm'
+
+******_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13418.447_13418.916.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.861485e+02  : 'I3'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.925356e+02  : 'Bm'
+
+***********_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14489.454_14491.603.seq: 'Bm'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -9.030412e+02  : 'I2'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -9.448152e+02  : 'I3'
+  [ 2]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -9.580140e+02  : 'I4'
+  [ 3] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.015342e+03  : 'Bm'
+
+**_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15355.015_15356.255.seq: 'Bm'
+  [ 0]   < 1>  data/hmms/N3__M2048_t3__a0.3_I2/B.hmm                        : -4.419954e+02  : 'B'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.659296e+02  : 'Bm'
+
+**_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15450.275_15450.957.seq: 'Bm'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.998800e+02  : 'I2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.089624e+02  : 'E'
+  [ 2]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -3.202063e+02  : 'P'
+  [ 3] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.252279e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16110.104_16111.587.seq: 'Bm'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -6.681707e+02  : 'I2'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -6.831190e+02  : 'I3'
+  [ 2]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -6.960581e+02  : 'I4'
+  [ 3] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -8.029581e+02  : 'Bm'
+
+***_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1657.7561_1661.7269.seq: 'Bm'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -1.504154e+03  : 'Bd'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.688299e+03  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16578.328_16579.54.seq: 'Bm'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -5.559646e+02  : 'G2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -5.597683e+02  : 'P'
+  [ 2]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -5.750061e+02  : 'A'
+  [ 3]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.886803e+02  : 'E'
+  [ 4]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -6.117735e+02  : 'I'
+  [ 5]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -6.250989e+02  : 'I2'
+  [ 6]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -6.334197e+02  : 'F'
+  [ 7]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -6.394552e+02  : 'I4'
+  [ 8] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.588989e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1807.3291_1810.6996.seq: 'Bm'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -1.537009e+03  : 'Bd'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.548568e+03  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1855.0012_1855.3937.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -1.517706e+02  : 'Bu'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.568581e+02  : 'I3'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.694665e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1864.1201_1864.8555.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -3.370335e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.397430e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1876.9269_1877.3242.seq: 'Bm'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.681570e+02  : 'D'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.685540e+02  : 'I3'
+  [ 2]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.708026e+02  : 'I'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.717472e+02  : 'P'
+  [ 4]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -1.754820e+02  : 'H'
+  [ 5]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.780796e+02  : 'I2'
+  [ 6] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.806215e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1900.6345_1900.8663.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -9.310302e+01  : 'I3'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -9.813644e+01  : 'I2'
+  [ 2]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -9.818680e+01  : 'Bd'
+  [ 3]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -9.839707e+01  : 'I4'
+  [ 4]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -9.903254e+01  : 'Bu'
+  [ 5] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -9.906263e+01  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1901.512_1901.777.seq: 'Bm'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -8.439773e+01  : 'G'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -8.911884e+01  : 'E'
+  [ 2]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -8.944303e+01  : 'D'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -9.154950e+01  : 'P'
+  [ 4]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -9.530246e+01  : 'I3'
+  [ 5]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -9.653182e+01  : 'G2'
+  [ 6]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -9.938510e+01  : 'I'
+  [ 7]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -1.007323e+02  : 'H'
+  [ 8]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -1.020395e+02  : 'Bu'
+  [ 9]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -1.044976e+02  : 'A'
+  [10]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.077633e+02  : 'I2'
+  [11]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.078036e+02  : 'C'
+  [12]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.084585e+02  : 'F'
+  [13] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.104122e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1923.0352_1923.4507.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.666045e+02  : 'I3'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.689483e+02  : 'E'
+  [ 2]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -1.767518e+02  : 'Bu'
+  [ 3]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -1.787854e+02  : 'G'
+  [ 4]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.799018e+02  : 'D'
+  [ 5]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.829794e+02  : 'G2'
+  [ 6]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -1.830119e+02  : 'Bd'
+  [ 7]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.864762e+02  : 'I'
+  [ 8] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.886155e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2454.7898_2457.2073.seq: 'Bm'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -8.944645e+02  : 'Bd'
+  [ 1]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -8.968728e+02  : 'Bu'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.027286e+03  : 'Bm'
+
+***_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3027.2522_3027.6216.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.352747e+02  : 'I3'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.353882e+02  : 'Bm'
+
+*_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3064.1204_3064.8013.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.759266e+02  : 'I3'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.041619e+02  : 'Bm'
+
+***_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3597.535_3598.3247.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -3.609359e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.691765e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4095.2961_4096.06.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -3.353943e+02  : 'Bu'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.449245e+02  : 'I3'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.517016e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4149.893_4150.986.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -4.225917e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.638031e+02  : 'Bm'
+
+**_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4636.356_4638.183.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -7.740519e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -8.236017e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4647.349_4648.4873.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -5.165938e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -5.308530e+02  : 'Bm'
+
+*_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4701.895_4703.1787.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -5.277429e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -5.763596e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5187.9517_5189.64.seq: 'Bm'
+  [ 0]   < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -6.628757e+02  : 'Bu'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -7.873305e+02  : 'Bm'
+
+***************_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__6616.638_6617.731.seq: 'Bm'
+  [ 0]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.165218e+02  : 'A'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.998862e+02  : 'Bm'
+
+*************_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8779.943_8780.503.seq: 'Bm'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.076562e+02  : 'I4'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.294511e+02  : 'I3'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.298622e+02  : 'I2'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.299673e+02  : 'P'
+  [ 4]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -2.348855e+02  : 'H'
+  [ 5]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.353462e+02  : 'I'
+  [ 6]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -2.372828e+02  : 'C'
+  [ 7] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.405686e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8781.215_8781.698.seq: 'Bm'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -1.943470e+02  : 'I4'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.005708e+02  : 'I2'
+  [ 2]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.111066e+02  : 'I'
+  [ 3]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.135150e+02  : 'E'
+  [ 4]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.138015e+02  : 'P'
+  [ 5]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.140776e+02  : 'I3'
+  [ 6]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -2.160153e+02  : 'G'
+  [ 7] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.167647e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9104.144_9105.111.seq: 'Bm'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -3.837355e+02  : 'Bd'
+  [ 1] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.993197e+02  : 'Bm'
+
+**_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9269.171_9270.063.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.775357e+02  : 'I3'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.841713e+02  : 'I4'
+  [ 2] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.986341e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9646.796_9647.28.seq: 'Bm'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -1.981100e+02  : 'I4'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.982653e+02  : 'I3'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.012580e+02  : 'I2'
+  [ 3]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -2.101969e+02  : 'Bd'
+  [ 4]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.243167e+02  : 'I'
+  [ 5] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.262820e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bm/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9683.185_9683.8955.seq: 'Bm'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.825575e+02  : 'I3'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.844675e+02  : 'I2'
+  [ 2]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.882424e+02  : 'I4'
+  [ 3]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -3.059057e+02  : 'H'
+  [ 4] * < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.164418e+02  : 'Bm'
+
+_
+data/sequences/TEST/M2048/Bu/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1004.5744_1006.8137.seq: 'Bu'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -8.289179e+02  : 'Bd'
+  [ 1] * < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -8.503470e+02  : 'Bu'
+
+*_
+data/sequences/TEST/M2048/Bu/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1123.2124_1124.0681.seq: 'Bu'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.192988e+02  : 'Bm'
+  [ 1] * < 4>  data/hmms/N3__M2048_t3__a0.3_I2/Bu.hmm                       : -4.317775e+02  : 'Bu'
+
+*****_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10180.279_10182.02.seq: 'C'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -7.199336e+02  : 'G2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -7.301915e+02  : 'E'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -7.624104e+02  : 'I2'
+  [ 3]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -7.703499e+02  : 'I'
+  [ 4] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.938840e+02  : 'C'
+
+**_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10666.39_10668.659.seq: 'C'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.052587e+03  : 'D'
+  [ 1]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.062470e+03  : 'F'
+  [ 2] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.103314e+03  : 'C'
+
+****_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11019.903_11021.708.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -7.240734e+02  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.785091e+02  : 'C'
+
+********_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11664.971_11666.813.seq: 'C'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -7.768397e+02  : 'G2'
+  [ 1]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -7.792371e+02  : 'F'
+  [ 2]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -8.012056e+02  : 'E1'
+  [ 3] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -8.018588e+02  : 'C'
+
+*************_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13870.271_13871.119.seq: 'C'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.444288e+02  : 'I'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.603892e+02  : 'E'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.649318e+02  : 'I2'
+  [ 3] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -3.908666e+02  : 'C'
+
+_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14162.849_14164.906.seq: 'C'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -8.445412e+02  : 'Bm'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -8.824281e+02  : 'P'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -8.853619e+02  : 'I2'
+  [ 3] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -9.130089e+02  : 'C'
+
+**_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15112.853_15114.757.seq: 'C'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -7.388590e+02  : 'E1'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.578028e+02  : 'C'
+
+*_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16182.382_16184.122.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -6.891202e+02  : 'F'
+  [ 1]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -8.614000e+02  : 'A'
+  [ 2] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -8.751013e+02  : 'C'
+
+**_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16245.324_16247.685.seq: 'C'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.048440e+03  : 'I'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.084438e+03  : 'P'
+  [ 2]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.089233e+03  : 'F'
+  [ 3]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.095907e+03  : 'I2'
+  [ 4]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.097088e+03  : 'G2'
+  [ 5] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.102462e+03  : 'C'
+
+_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16343.732_16345.608.seq: 'C'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -8.476523e+02  : 'I'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -8.485426e+02  : 'C'
+
+_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1721.0939_1723.8618.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.266072e+03  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.283589e+03  : 'C'
+
+****_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1828.0602_1830.5764.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.064093e+03  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.113204e+03  : 'C'
+
+************************_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5117.4756_5119.369.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -7.896102e+02  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.917486e+02  : 'C'
+
+**********_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__6680.4985_6683.38.seq: 'C'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.414107e+03  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.453017e+03  : 'P'
+  [ 2] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.469732e+03  : 'C'
+
+******_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7691.82_7693.71.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -7.780438e+02  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.998162e+02  : 'C'
+
+_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7717.5767_7719.9185.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -9.834118e+02  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.000272e+03  : 'C'
+
+***_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8209.484_8211.873.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.056212e+03  : 'F'
+  [ 1]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -1.059417e+03  : 'A'
+  [ 2] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.074486e+03  : 'C'
+
+********_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9244.755_9246.295.seq: 'C'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.276072e+02  : 'G2'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -6.502634e+02  : 'I'
+  [ 2] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -6.539579e+02  : 'C'
+
+***_
+data/sequences/TEST/M2048/C/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__986.95996_990.0996.seq: 'C'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.441420e+03  : 'F'
+  [ 1] * < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.441569e+03  : 'C'
+
+***********_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12669.491_12671.876.seq: 'D'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.040351e+03  : 'F'
+  [ 1] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.089236e+03  : 'D'
+
+*_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14643.437_14645.267.seq: 'D'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -7.322663e+02  : 'C'
+  [ 1]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -8.896609e+02  : 'A'
+  [ 2]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -9.175884e+02  : 'F'
+  [ 3]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -9.181347e+02  : 'I2'
+  [ 4] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -9.438414e+02  : 'D'
+
+*******_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__355.60098_358.33453.seq: 'D'
+  [ 0]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.174613e+03  : 'F'
+  [ 1] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.316005e+03  : 'D'
+
+*_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3590.7563_3592.5444.seq: 'D'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -7.010004e+02  : 'E'
+  [ 1] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -7.802998e+02  : 'D'
+
+*********_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8300.43_8301.836.seq: 'D'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -6.403321e+02  : 'I'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -6.529715e+02  : 'E'
+  [ 2] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -6.656294e+02  : 'D'
+
+**_
+data/sequences/TEST/M2048/D/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8772.424_8774.6045.seq: 'D'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -9.449779e+02  : 'I'
+  [ 1]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -9.866028e+02  : 'C'
+  [ 2]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.027408e+03  : 'F'
+  [ 3] * < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.043046e+03  : 'D'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10691.824_10692.687.seq: 'E'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -3.776619e+02  : 'C'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.899496e+02  : 'E'
+
+*_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10707.015_10708.028.seq: 'E'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -4.094040e+02  : 'D'
+  [ 1]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -4.263559e+02  : 'M'
+  [ 2]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -4.385030e+02  : 'P'
+  [ 3]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -4.400416e+02  : 'H'
+  [ 4] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.706227e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11200.933_11202.476.seq: 'E'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -6.152863e+02  : 'C'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -6.704023e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11248.812_11249.516.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.746210e+02  : 'P'
+  [ 1]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.747635e+02  : 'G2'
+  [ 2]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -2.750750e+02  : 'A'
+  [ 3] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.782995e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1199.6564_1200.4291.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.924368e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.131632e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1201.15_1202.0273.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.481539e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.572780e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12146.356_12146.826.seq: 'E'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.854729e+02  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.875312e+02  : 'P'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.895355e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12172.774_12173.395.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.452866e+02  : 'P'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.466250e+02  : 'I2'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.490638e+02  : 'E'
+
+******_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12700.493_12701.416.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -3.975113e+02  : 'G2'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.991104e+02  : 'I2'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.014587e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12711.887_12712.688.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -3.382401e+02  : 'G2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -3.383541e+02  : 'P'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.454211e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13119.878_13120.65.seq: 'E'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -2.707789e+02  : 'E1'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.840239e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13453.58_13454.2.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.457200e+02  : 'P'
+  [ 1]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -2.664847e+02  : 'C'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.760782e+02  : 'I2'
+  [ 3]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -2.761483e+02  : 'F'
+  [ 4]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -2.762114e+02  : 'D'
+  [ 5]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -2.782036e+02  : 'M'
+  [ 6] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.825294e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13469.754_13470.617.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -3.832900e+02  : 'P'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.885181e+02  : 'I2'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.935540e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14276.236_14276.856.seq: 'E'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.624540e+02  : 'I2'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.695657e+02  : 'E'
+
+****_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14616.822_14617.829.seq: 'E'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -4.251625e+02  : 'C'
+  [ 1]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.600636e+02  : 'A'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.689975e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14620.59_14621.6045.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.980614e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.376807e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14635.297_14636.307.seq: 'E'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -3.774242e+02  : 'G'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.841428e+02  : 'E'
+
+******_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15102.367_15103.108.seq: 'E'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -2.821680e+02  : 'G'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.834787e+02  : 'P'
+  [ 2] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.837760e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15121.25_15121.931.seq: 'E'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -2.565649e+02  : 'G'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.683608e+02  : 'E'
+
+*************_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16331.477_16332.067.seq: 'E'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -2.531775e+02  : 'D'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.663702e+02  : 'E'
+
+**********_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3089.3074_3090.1116.seq: 'E'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -3.677797e+02  : 'C'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.686872e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3202.0322_3202.7854.seq: 'E'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -2.444239e+02  : 'E1'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.603176e+02  : 'E'
+
+*******_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3659.0784_3659.9277.seq: 'E'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -3.167695e+02  : 'D'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.442157e+02  : 'E'
+
+********_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4286.8193_4287.5313.seq: 'E'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -2.505684e+02  : 'E1'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.559048e+02  : 'E'
+
+*_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4302.1553_4303.089.seq: 'E'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -3.331113e+02  : 'E1'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.460503e+02  : 'E'
+
+***_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4772.796_4773.8745.seq: 'E'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -3.943974e+02  : 'E1'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.025356e+02  : 'E'
+
+******_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5265.2085_5265.718.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.308950e+02  : 'G2'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.320999e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5283.3906_5284.0796.seq: 'E'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -3.086188e+02  : 'D'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.173942e+02  : 'E'
+
+**********_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__6881.498_6882.288.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -3.181523e+02  : 'P'
+  [ 1]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -3.255279e+02  : 'M'
+  [ 2]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -3.355009e+02  : 'A'
+  [ 3]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.398800e+02  : 'I2'
+  [ 4] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.420881e+02  : 'E'
+
+*******_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7289.686_7290.6694.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.128468e+02  : 'G2'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.152498e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7309.519_7310.362.seq: 'E'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -3.622571e+02  : 'P'
+  [ 1]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -3.755299e+02  : 'D'
+  [ 2]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -3.824996e+02  : 'M'
+  [ 3] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.828911e+02  : 'E'
+
+_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7320.1963_7321.133.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.615113e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.708094e+02  : 'E'
+
+***_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7884.4575_7885.3003.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.172349e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.258446e+02  : 'E'
+
+***_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8385.966_8386.832.seq: 'E'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.625672e+02  : 'I'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.739037e+02  : 'E'
+
+*_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9282.062_9282.637.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.361259e+02  : 'G2'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.436661e+02  : 'E'
+
+*_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9313.186_9314.274.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.642642e+02  : 'G2'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.668376e+02  : 'I2'
+  [ 2]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -4.695780e+02  : 'I'
+  [ 3]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -4.739567e+02  : 'C'
+  [ 4] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.742771e+02  : 'E'
+
+*_
+data/sequences/TEST/M2048/E/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9772.378_9773.157.seq: 'E'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -3.006202e+02  : 'G2'
+  [ 1] * < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.080186e+02  : 'E'
+
+**_
+data/sequences/TEST/M2048/E1/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11300.333_11301.492.seq: 'E1'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.741174e+02  : 'G2'
+  [ 1] * < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -4.810803e+02  : 'E1'
+
+*************************_
+data/sequences/TEST/M2048/F/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13827.972_13830.282.seq: 'F'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -9.631484e+02  : 'D'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.109111e+03  : 'E'
+  [ 2] * <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.239755e+03  : 'F'
+
+*************_
+data/sequences/TEST/M2048/F/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16366.716_16369.288.seq: 'F'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.097697e+03  : 'G2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.124486e+03  : 'P'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.132203e+03  : 'I2'
+  [ 3]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.139109e+03  : 'I'
+  [ 4]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.147802e+03  : 'E'
+  [ 5]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -1.154809e+03  : 'A'
+  [ 6] * <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.160427e+03  : 'F'
+
+******_
+data/sequences/TEST/M2048/F/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3661.6726_3663.7998.seq: 'F'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -9.095765e+02  : 'D'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.099996e+03  : 'E'
+  [ 2]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.191485e+03  : 'C'
+  [ 3] * <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.215213e+03  : 'F'
+
+**************_
+data/sequences/TEST/M2048/F/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7450.994_7453.1714.seq: 'F'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -8.658559e+02  : 'M'
+  [ 1] * <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -8.924966e+02  : 'F'
+
+*********_
+data/sequences/TEST/M2048/G/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10752.33_10754.056.seq: 'G'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -7.288271e+02  : 'P'
+  [ 1]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -7.758072e+02  : 'D'
+  [ 2]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -7.827349e+02  : 'E'
+  [ 3]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -7.862276e+02  : 'H'
+  [ 4] * <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -7.983133e+02  : 'G'
+
+_
+data/sequences/TEST/M2048/G/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12268.176_12269.216.seq: 'G'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.817466e+02  : 'Bm'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -4.062446e+02  : 'P'
+  [ 2]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -4.172575e+02  : 'C'
+  [ 3]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.189054e+02  : 'I2'
+  [ 4]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.212113e+02  : 'E'
+  [ 5] * <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -4.253456e+02  : 'G'
+
+*******_
+data/sequences/TEST/M2048/G/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15950.72_15952.369.seq: 'G'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -6.360957e+02  : 'P'
+  [ 1]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.437868e+02  : 'G2'
+  [ 2]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -6.594519e+02  : 'E'
+  [ 3]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.694308e+02  : 'Bm'
+  [ 4] * <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -6.722251e+02  : 'G'
+
+_
+data/sequences/TEST/M2048/G/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16397.188_16398.564.seq: 'G'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -5.373335e+02  : 'M'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -5.406375e+02  : 'I4'
+  [ 2]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -5.514260e+02  : 'F'
+  [ 3] * <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -5.571035e+02  : 'G'
+
+***_
+data/sequences/TEST/M2048/G/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9888.005_9889.972.seq: 'G'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -8.096295e+02  : 'G2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -8.334501e+02  : 'E'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -8.474091e+02  : 'I2'
+  [ 3]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -8.496038e+02  : 'I'
+  [ 4] * <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -8.646513e+02  : 'G'
+
+**********_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12800.339_12801.954.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -6.078891e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.176663e+02  : 'G2'
+
+*********_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15210.9_15212.357.seq: 'G2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.350539e+02  : 'E'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -6.055055e+02  : 'I2'
+  [ 2]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -6.270322e+02  : 'I'
+  [ 3] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.475297e+02  : 'G2'
+
+********_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2188.372_2189.9946.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -5.841426e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.022351e+02  : 'G2'
+
+_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3293.7244_3295.1316.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -4.361223e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.799776e+02  : 'G2'
+
+_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3341.3872_3342.695.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -4.246889e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.905286e+02  : 'G2'
+
+*****_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4346.8125_4348.6226.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -5.590180e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -6.213747e+02  : 'G2'
+
+**_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4874.692_4875.934.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -3.943466e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.391205e+02  : 'G2'
+
+_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4892.9927_4894.3335.seq: 'G2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.247920e+02  : 'E'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -5.492242e+02  : 'G2'
+
+_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4896.6606_4898.101.seq: 'G2'
+  [ 0]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -4.165595e+02  : 'E1'
+  [ 1] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -5.380609e+02  : 'G2'
+
+***********_
+data/sequences/TEST/M2048/G2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8024.3403_8026.705.seq: 'G2'
+  [ 0]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.030082e+03  : 'C'
+  [ 1]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -1.034828e+03  : 'F'
+  [ 2] * <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.045029e+03  : 'G2'
+
+*********************_
+data/sequences/TEST/M2048/H/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16361.238_16362.752.seq: 'H'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -5.674916e+02  : 'M'
+  [ 1]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -6.022424e+02  : 'F'
+  [ 2] * <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -6.030912e+02  : 'H'
+
+**_
+data/sequences/TEST/M2048/H/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3074.3818_3075.226.seq: 'H'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.222254e+02  : 'I3'
+  [ 1] * <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -4.284386e+02  : 'H'
+
+****_
+data/sequences/TEST/M2048/H/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7375.7144_7376.8735.seq: 'H'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -4.367764e+02  : 'M'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -4.685534e+02  : 'I4'
+  [ 2] * <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -4.886707e+02  : 'H'
+
+****_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10331.508_10332.022.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.972070e+02  : 'E'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.990837e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10333.808_10334.307.seq: 'I'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.918681e+02  : 'G2'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.984967e+02  : 'I2'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.990905e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10826.894_10827.332.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.659234e+02  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.718676e+02  : 'P'
+  [ 2]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.847534e+02  : 'G2'
+  [ 3] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.849594e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10847.758_10848.257.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.962995e+02  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.065779e+02  : 'P'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.082055e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10849.952_10850.451.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.978397e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.003239e+02  : 'I'
+
+*****_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11774.421_11774.936.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.142031e+02  : 'I2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.162585e+02  : 'E'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.181635e+02  : 'I'
+
+*_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11791.412_11791.957.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.245388e+02  : 'I2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.253797e+02  : 'E'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.298857e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11821.8545_11822.309.seq: 'I'
+  [ 0]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -1.919917e+02  : 'D'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.987776e+02  : 'I2'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.012470e+02  : 'I'
+
+***_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13566.316_13566.861.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.214840e+02  : 'I2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.255568e+02  : 'E'
+  [ 2]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.261407e+02  : 'G2'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.352711e+02  : 'P'
+  [ 4]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -2.380799e+02  : 'A'
+  [ 5] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.394880e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13968.801_13969.315.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.021345e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.081470e+02  : 'I'
+
+********_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15188.504_15188.822.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.164979e+02  : 'E'
+  [ 1]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.170824e+02  : 'G2'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.274429e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15202.561_15202.924.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.405537e+02  : 'E'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.473686e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1528.4064_1528.9604.seq: 'I'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.150786e+02  : 'I3'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.595660e+02  : 'I4'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.615647e+02  : 'I'
+
+*_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16448.842_16449.313.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.920272e+02  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.993640e+02  : 'P'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.995785e+02  : 'I'
+
+*_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2141.5767_2142.3074.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.852860e+02  : 'E'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.951926e+02  : 'I'
+
+**********_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3805.3057_3805.8188.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.025741e+02  : 'E'
+  [ 1]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.027360e+02  : 'I2'
+  [ 2]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.161678e+02  : 'G2'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.222462e+02  : 'P'
+  [ 4]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -2.264488e+02  : 'F'
+  [ 5]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -2.292724e+02  : 'D'
+  [ 6]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -2.303758e+02  : 'C'
+  [ 7]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -2.320834e+02  : 'A'
+  [ 8]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -2.333632e+02  : 'Bm'
+  [ 9] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.357796e+02  : 'I'
+
+*_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4322.0166_4322.6533.seq: 'I'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.312270e+02  : 'G2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.470244e+02  : 'I'
+
+****_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__462.65726_463.23557.seq: 'I'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.532473e+02  : 'P'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.617851e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__463.37436_463.81387.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.963931e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.043950e+02  : 'I'
+
+**_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__478.75735_479.24313.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.880371e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.899382e+02  : 'I'
+
+*****_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__503_503.5089.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.043410e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.250297e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5918.8374_5919.4727.seq: 'I'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.450408e+02  : 'G2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.626341e+02  : 'I'
+
+******_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7021.3003_7021.7686.seq: 'I'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.816974e+02  : 'I2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.829074e+02  : 'I'
+
+***_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7491.643_7492.205.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.344406e+02  : 'E'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.347021e+02  : 'I'
+
+**_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__816.8716_817.5975.seq: 'I'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -3.024614e+02  : 'G'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -3.047392e+02  : 'E'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -3.092874e+02  : 'I'
+
+************_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8990.06_8990.469.seq: 'I'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.514503e+02  : 'G2'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.556473e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9363.509_9364.145.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.583807e+02  : 'E'
+  [ 1] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.586977e+02  : 'I'
+
+_
+data/sequences/TEST/M2048/I/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9365.8545_9366.354.seq: 'I'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.849690e+02  : 'E'
+  [ 1]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.878278e+02  : 'G2'
+  [ 2] * <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.903598e+02  : 'I'
+
+**************************_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12477.88_12478.303.seq: 'I2'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.608245e+02  : 'Bm'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.608517e+02  : 'I2'
+
+*****_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12827.982_12828.451.seq: 'I2'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -1.916908e+02  : 'I4'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.917743e+02  : 'I2'
+
+****_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12841.917_12842.492.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.261817e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.362000e+02  : 'I2'
+
+**_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13578.799_13579.269.seq: 'I2'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.709100e+02  : 'G2'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.799176e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13580.963_13581.356.seq: 'I2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.574190e+02  : 'E'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.640130e+02  : 'I'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.642252e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13584.654_13585.094.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.627324e+02  : 'I'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.643032e+02  : 'P'
+  [ 2]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.646823e+02  : 'E'
+  [ 3]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.648546e+02  : 'G2'
+  [ 4]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -1.658544e+02  : 'G'
+  [ 5] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.667821e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13595.442_13595.761.seq: 'I2'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.129937e+02  : 'G2'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.148288e+02  : 'I2'
+
+******_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__14446.968_14448.027.seq: 'I2'
+  [ 0]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -3.976875e+02  : 'A'
+  [ 1]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -4.060360e+02  : 'Bm'
+  [ 2]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.163791e+02  : 'I3'
+  [ 3]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -4.815458e+02  : 'I4'
+  [ 4]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -5.173971e+02  : 'I'
+  [ 5] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -5.192480e+02  : 'I2'
+
+****_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15238.511_15238.889.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.521831e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.566874e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15607.965_15608.374.seq: 'I2'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.572333e+02  : 'G2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.711284e+02  : 'E'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.722069e+02  : 'I2'
+
+*****_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15644.792_15645.171.seq: 'I2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.311642e+02  : 'E'
+  [ 1]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.349515e+02  : 'C'
+  [ 2]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -1.389855e+02  : 'G'
+  [ 3]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.391100e+02  : 'Bm'
+  [ 4]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.420885e+02  : 'I3'
+  [ 5]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.422338e+02  : 'P'
+  [ 6]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -1.426354e+02  : 'A'
+  [ 7] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.437676e+02  : 'I2'
+
+*_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16012.725_16013.179.seq: 'I2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.850461e+02  : 'E'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.856580e+02  : 'I2'
+
+*_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16016.129_16016.537.seq: 'I2'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.627665e+02  : 'E'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.681840e+02  : 'I2'
+
+**_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16032.803_16033.362.seq: 'I2'
+  [ 0]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.084921e+02  : 'P'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.175028e+02  : 'I2'
+
+***_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2200.5957_2201.1035.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.946455e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.068047e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2201.3115_2201.8193.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.028155e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.115019e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__2782.4504_2783.0276.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.480796e+02  : 'I'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.503744e+02  : 'E'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.516708e+02  : 'I2'
+
+*****************_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__529.69464_530.59033.seq: 'I2'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.557313e+02  : 'I3'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.609506e+02  : 'I2'
+
+**********_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5968.4_5968.9507.seq: 'I2'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.304709e+02  : 'G2'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.309128e+02  : 'I2'
+
+***************_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7068.5522_7069.1377.seq: 'I2'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.405111e+02  : 'I3'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.411560e+02  : 'I2'
+
+***********_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8997.308_8997.746.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.526359e+02  : 'I'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.769814e+02  : 'E'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.856784e+02  : 'I2'
+
+_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8998.82_8999.244.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.523773e+02  : 'I'
+  [ 1]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.628316e+02  : 'G2'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.645326e+02  : 'I2'
+
+*****_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9444.487_9444.8955.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.566728e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.606124e+02  : 'I2'
+
+*_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9968.469_9968.756.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.128364e+02  : 'I'
+  [ 1]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.147510e+02  : 'C'
+  [ 2] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.153320e+02  : 'I2'
+
+*_
+data/sequences/TEST/M2048/I2/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9974.899_9975.338.seq: 'I2'
+  [ 0]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.833043e+02  : 'I'
+  [ 1] * <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.854423e+02  : 'I2'
+
+***_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__10029.429_10030.261.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.313528e+02  : 'I4'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.414038e+02  : 'I3'
+
+*****_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11450.1_11451.084.seq: 'I3'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.120296e+02  : 'I2'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.203894e+02  : 'I3'
+
+*_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11914.377_11915.88.seq: 'I3'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.844705e+02  : 'Bm'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -6.943416e+02  : 'I3'
+
+****_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13260.062_13261.711.seq: 'I3'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -7.202042e+02  : 'Bm'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -7.688383e+02  : 'I3'
+
+_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__13663.727_13664.68.seq: 'I3'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.148105e+02  : 'I2'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.286510e+02  : 'I3'
+
+*********_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__15661.2295_15662.198.seq: 'I3'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -3.993197e+02  : 'I2'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.999277e+02  : 'I3'
+
+*****_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16095.851_16097.273.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -6.075667e+02  : 'I4'
+  [ 1]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -6.358492e+02  : 'Bm'
+  [ 2] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -6.421917e+02  : 'I3'
+
+_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16505.93_16506.459.seq: 'I3'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -1.916541e+02  : 'M'
+  [ 1]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.010412e+02  : 'I4'
+  [ 2]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -2.117686e+02  : 'H'
+  [ 3] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.118679e+02  : 'I3'
+
+*_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__16536.023_16536.916.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.399537e+02  : 'I4'
+  [ 1]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -3.469349e+02  : 'M'
+  [ 2]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -3.598411e+02  : 'F'
+  [ 3]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -3.654088e+02  : 'Bm'
+  [ 4] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.664906e+02  : 'I3'
+
+******_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4415.266_4416.344.seq: 'I3'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.348194e+02  : 'I2'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -4.371757e+02  : 'I3'
+
+*****************_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9067.648_9068.375.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.717937e+02  : 'I4'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.932283e+02  : 'I3'
+
+_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9081.463_9082.643.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -4.721148e+02  : 'I4'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -5.015993e+02  : 'I3'
+
+_
+data/sequences/TEST/M2048/I3/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9086.879_9088.362.seq: 'I3'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -5.837085e+02  : 'I4'
+  [ 1] * <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -6.065886e+02  : 'I3'
+
+_
+data/sequences/TEST/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11482.328_11489.151.seq: 'I4'
+  [ 0]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.912747e+03  : 'I2'
+  [ 1]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.991653e+03  : 'P'
+  [ 2]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -3.011367e+03  : 'M'
+  [ 3] * <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.031123e+03  : 'I4'
+
+_
+data/sequences/TEST/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__12641.288_12644.026.seq: 'I4'
+  [ 0]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.220943e+03  : 'Bm'
+  [ 1]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.248798e+03  : 'I3'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.281268e+03  : 'I2'
+  [ 3] * <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -1.341005e+03  : 'I4'
+
+****_
+data/sequences/TEST/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3931.827_3938.0522.seq: 'I4'
+  [ 0]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -2.743956e+03  : 'Bd'
+  [ 1] * <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.931213e+03  : 'I4'
+
+_
+data/sequences/TEST/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4472.628_4477.001.seq: 'I4'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -1.882719e+03  : 'I3'
+  [ 1]   < 3>  data/hmms/N3__M2048_t3__a0.3_I2/Bm.hmm                       : -1.901854e+03  : 'Bm'
+  [ 2]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -1.954449e+03  : 'C'
+  [ 3]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.960119e+03  : 'P'
+  [ 4]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -1.976189e+03  : 'A'
+  [ 5]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.986046e+03  : 'E'
+  [ 6] * <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.014945e+03  : 'I4'
+
+_
+data/sequences/TEST/M2048/I4/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__4491.379_4497.939.seq: 'I4'
+  [ 0]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -3.041802e+03  : 'I3'
+  [ 1]   < 2>  data/hmms/N3__M2048_t3__a0.3_I2/Bd.hmm                       : -3.102488e+03  : 'Bd'
+  [ 2] * <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -3.119716e+03  : 'I4'
+
+*****_
+data/sequences/TEST/M2048/M/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5862.518_5863.196.seq: 'M'
+  [ 0]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -2.777154e+02  : 'H'
+  [ 1] * <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -2.927731e+02  : 'M'
+
+_
+data/sequences/TEST/M2048/M/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5863.9585_5864.636.seq: 'M'
+  [ 0]   <13>  data/hmms/N3__M2048_t3__a0.3_I2/H.hmm                        : -2.567039e+02  : 'H'
+  [ 1] * <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -2.570274e+02  : 'M'
+
+*_
+data/sequences/TEST/M2048/M/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__5876.0103_5876.6455.seq: 'M'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -2.403369e+02  : 'G2'
+  [ 1]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -2.487585e+02  : 'E'
+  [ 2]   <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.489890e+02  : 'P'
+  [ 3]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -2.547491e+02  : 'C'
+  [ 4]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -2.551455e+02  : 'I2'
+  [ 5]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -2.574979e+02  : 'A'
+  [ 6]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -2.665068e+02  : 'D'
+  [ 7]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -2.693169e+02  : 'I'
+  [ 8]   < 9>  data/hmms/N3__M2048_t3__a0.3_I2/E1.hmm                       : -2.712084e+02  : 'E1'
+  [ 9]   <10>  data/hmms/N3__M2048_t3__a0.3_I2/F.hmm                        : -2.727871e+02  : 'F'
+  [10] * <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -2.747394e+02  : 'M'
+
+**_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__11402.016_11403.211.seq: 'P'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -4.543703e+02  : 'M'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -4.561943e+02  : 'P'
+
+******_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__1537.179_1538.4949.seq: 'P'
+  [ 0]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -4.497022e+02  : 'G'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -4.911654e+02  : 'P'
+
+******_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__3366.4678_3368.0078.seq: 'P'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.802743e+02  : 'E'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -6.280806e+02  : 'P'
+
+******_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__6522.903_6524.294.seq: 'P'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -5.448721e+02  : 'M'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -5.547405e+02  : 'P'
+
+**_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7558.5405_7559.758.seq: 'P'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -5.013469e+02  : 'G2'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -5.017581e+02  : 'I'
+  [ 2] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -5.086459e+02  : 'P'
+
+**_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__7604.294_7608.6724.seq: 'P'
+  [ 0]   <18>  data/hmms/N3__M2048_t3__a0.3_I2/M.hmm                        : -1.873088e+03  : 'M'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -1.891697e+03  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8596.3125_8597.351.seq: 'P'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.257206e+02  : 'G2'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -4.312149e+02  : 'I'
+  [ 2]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -4.565216e+02  : 'E'
+  [ 3]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -4.593688e+02  : 'C'
+  [ 4]   < 0>  data/hmms/N3__M2048_t3__a0.3_I2/A.hmm                        : -4.666857e+02  : 'A'
+  [ 5]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.689639e+02  : 'I2'
+  [ 6]   <11>  data/hmms/N3__M2048_t3__a0.3_I2/G.hmm                        : -4.701943e+02  : 'G'
+  [ 7]   < 7>  data/hmms/N3__M2048_t3__a0.3_I2/D.hmm                        : -4.852020e+02  : 'D'
+  [ 8] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -4.881810e+02  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8620.717_8622.953.seq: 'P'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -9.265316e+02  : 'I4'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -9.759856e+02  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__8623.964_8628.852.seq: 'P'
+  [ 0]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.009603e+03  : 'I4'
+  [ 1] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.018561e+03  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9030.579_9032.576.seq: 'P'
+  [ 0]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -8.742410e+02  : 'E'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -8.774733e+02  : 'I'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -8.793971e+02  : 'I2'
+  [ 3]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -8.799408e+02  : 'I4'
+  [ 4]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -8.809454e+02  : 'G2'
+  [ 5] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -8.816254e+02  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9981.859_9983.039.seq: 'P'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -4.809900e+02  : 'G2'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -4.859016e+02  : 'I'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -4.995826e+02  : 'I2'
+  [ 3]   < 5>  data/hmms/N3__M2048_t3__a0.3_I2/C.hmm                        : -4.996906e+02  : 'C'
+  [ 4]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -5.057074e+02  : 'E'
+  [ 5] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -5.409880e+02  : 'P'
+
+_
+data/sequences/TEST/M2048/P/from_MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav__9986.776_9991.149.seq: 'P'
+  [ 0]   <12>  data/hmms/N3__M2048_t3__a0.3_I2/G2.hmm                       : -1.916274e+03  : 'G2'
+  [ 1]   <14>  data/hmms/N3__M2048_t3__a0.3_I2/I.hmm                        : -1.924805e+03  : 'I'
+  [ 2]   <15>  data/hmms/N3__M2048_t3__a0.3_I2/I2.hmm                       : -1.928692e+03  : 'I2'
+  [ 3]   < 8>  data/hmms/N3__M2048_t3__a0.3_I2/E.hmm                        : -1.948939e+03  : 'E'
+  [ 4]   <17>  data/hmms/N3__M2048_t3__a0.3_I2/I4.hmm                       : -2.014137e+03  : 'I4'
+  [ 5]   <16>  data/hmms/N3__M2048_t3__a0.3_I2/I3.hmm                       : -2.050331e+03  : 'I3'
+  [ 6] * <19>  data/hmms/N3__M2048_t3__a0.3_I2/P.hmm                        : -2.060450e+03  : 'P'
+
+
+
+     Confusion matrix:
+            0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19     tests   errors
+
+   A   0   99   0   0   1   0   0   0   0   0   0   0   0   0   0   1   0   1   0   0   0      102       3
+   B   1    0   1   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0        2       1
+  Bd   2    0   0   4   2   1   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0        9       5
+  Bm   3    3   1   4  83   9   0   0   1   0   0   0   1   1   0   0   3  10   4   1   0      121      38
+  Bu   4    0   0   1   1   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0        8       2
+   C   5    0   0   0   1   0  90   0   1   0   1   9   0   3   0   3   1   0   0   0   0      109      19
+  C1   6    0   0   0   0   0   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0        3       0
+   D   7    0   0   0   0   0   1   0  28   1   0   2   0   0   0   2   0   0   0   0   0       34       6
+   E   8    0   0   0   0   0   4   0   4 105   5   0   3   7   0   6   2   0   0   0   6      142      37
+  E1   9    0   0   0   0   0   0   0   0   0   4   0   0   1   0   0   0   0   0   0   0        5       1
+   F  10    0   0   0   0   0   0   0   2   0   0  63   0   1   0   0   0   0   0   1   0       67       4
+   G  11    0   0   0   1   0   0   0   0   0   0   0  10   1   0   0   0   0   0   1   2       15       5
+  G2  12    0   0   0   0   0   1   0   0   2   7   0   0  51   0   0   0   0   0   0   0       61      10
+   H  13    0   0   0   0   0   0   0   0   0   0   0   0   0  25   0   0   1   0   2   0       28       3
+   I  14    0   0   0   0   0   0   0   1   8   0   0   1   4   0  66  12   1   0   0   1       94      28
+  I2  15    1   0   0   1   0   0   0   0   4   0   0   0   4   0  11 117   2   1   0   1      142      25
+  I3  16    0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   4  51   6   1   0       64      13
+  I4  17    0   0   1   1   0   0   0   0   0   0   0   0   0   0   0   1   2   4   0   0        9       5
+   M  18    0   0   0   0   0   0   0   0   0   0   0   0   1   2   0   0   0   0   8   0       11       3
+   P  19    0   0   0   0   0   0   0   0   2   0   0   1   4   0   0   0   0   2   3  22       34      12
+
+     class     accuracy    tests      candidate order
+   A     0       97.06%   102         99   2   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0
+   B     1       50.00%     2          1   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0
+  Bd     2       44.44%     9          4   1   1   0   2   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0
+  Bm     3       68.60%   121         83  18   6   4   1   2   2   2   2   0   0   0   0   1   0   0   0   0   0   0
+  Bu     4       75.00%     8          6   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   C     5       82.57%   109         90   9   5   3   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  C1     6      100.00%     3          3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   D     7       82.35%    34         28   3   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   E     8       73.94%   142        105  24   7   2   3   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+  E1     9       80.00%     5          4   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   F    10       94.03%    67         63   1   1   1   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+   G    11       66.67%    15         10   0   0   1   3   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  G2    12       83.61%    61         51   8   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   H    13       89.29%    28         25   1   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   I    14       70.21%    94         66  15  10   1   0   1   0   0   0   1   0   0   0   0   0   0   0   0   0   0
+  I2    15       82.39%   142        117  16   6   0   0   2   0   1   0   0   0   0   0   0   0   0   0   0   0   0
+  I3    16       79.69%    64         51  10   1   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  I4    17       44.44%     9          4   1   1   2   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+   M    18       72.73%    11          8   2   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0
+   P    19       64.71%    34         22   7   1   0   0   2   1   0   1   0   0   0   0   0   0   0   0   0   0   0
+
+       TOTAL     79.25%   1060        840 121  43  17  12   9   6   5   3   2   1   0   0   1   0   0   0   0   0   0
+  avg_accuracy   75.09%
+
+=> classification took 0.41s
+
+
+**CLASSIFICATION COMPLETED**  (took: 0mins:0secs)
+ N=3  M=2048  a=0.3  I=2
+ train_avg_accuracy: %
+  test_avg_accuracy: 75.09%
+
+
+==DONE MAIN==  (took: 0mins:0secs)
