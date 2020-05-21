@@ -1,5 +1,7 @@
 2020-05
 
+- remove data from version control to simplify things a bit
+
 - general update of the exerc01 exercise,
   see [exerc01/README.md](exerc01/README.md).
 

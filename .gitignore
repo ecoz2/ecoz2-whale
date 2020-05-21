@@ -2,6 +2,9 @@
 *.cbook
 *.hmm
 *.seq
-exerc01/data/signals
+*.mm
+*.nb
+exerc01/data
+exerc01/results
 stderr
 seq
