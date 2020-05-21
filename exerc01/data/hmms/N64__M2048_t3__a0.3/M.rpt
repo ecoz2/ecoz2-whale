@@ -1,8 +1,0 @@
-
-	Model: data/hmms/N64__M2048_t3__a0.3/M.hmm   className: 'M'
-	N=64 M=2048 type: cascade-3
-	restriction: 1e-05
-	        #sequences: 49
-	        auto value: 0.3  (|log|=1.20397)
-	      #refinements: 34
-	          Σ log(P): -1.084574e+04

@@ -1,8 +1,0 @@
-
-	Model: data/hmms/N100__M2048_t3__a0.3/F.hmm   className: 'F'
-	N=100 M=2048 type: cascade-3
-	restriction: 1e-05
-	        #sequences: 273
-	        auto value: 0.3
-	      #refinements: 85
-	          Σ log(P): -2.164510e+05
