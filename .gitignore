@@ -6,5 +6,7 @@
 *.nb
 exerc01/data
 exerc01/results
+exerc02/data
+exerc02/results
 stderr
 seq

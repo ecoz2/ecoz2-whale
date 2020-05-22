@@ -1,5 +1,6 @@
 2020-05
 
+- rerun exerc02, resulting in an increase in average accuracy to 75% from 70%.
 - add [exerc02](exerc02), basically a rerun of exerc1 with the same base
   signal but with different train and test sets and also using new
   file organization is ecoz2 (based on a tt-list.csv)

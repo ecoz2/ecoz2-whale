@@ -10,7 +10,7 @@ Similar to ../exerc01.
 ## Extracting the individual unit instances
 
 ```
-$ ecoz2 sgn extract --segments MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+$ ecoz2 sgn extract --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
                     --wav ${SOURCE_WAV} \
                     --out-dir data/signals
 
@@ -94,7 +94,7 @@ Codebook generation:
 
 prediction_order=36 class='_'  epsilon=0.0005
 
-395844 training vectors (ε=0.0005)
+393993 training vectors (ε=0.0005)
 Report: data/codebooks/_/eps_0.0005.rpt
 ...
 ```
@@ -130,3 +130,5 @@ Running ./hmm-exercise.sh
 ![](summary.png)
 
 ![](summary1.png)
+
+![](summary2.png)
