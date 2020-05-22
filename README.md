@@ -17,3 +17,7 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 
 - [exerc02](exerc02): As exerc01 but with some underlying adjustments in
   programs parameters and file organization.
+
+- exerc03: related with the "windy" interval in the 4.5 recording:
+    - [exerc03a](exerc03a): excluding the windy interval
+    - [exerc03b](exerc03b): only considering the windy interval
