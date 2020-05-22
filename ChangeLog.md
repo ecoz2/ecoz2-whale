@@ -1,5 +1,9 @@
 2020-05
 
+- add [exerc02](exerc02), basically a rerun of exerc1 with the same base
+  signal but with different train and test sets and also using new
+  file organization is ecoz2 (based on a tt-list.csv)
+
 - remove data from version control to simplify things a bit
 
 - general update of the exerc01 exercise,
