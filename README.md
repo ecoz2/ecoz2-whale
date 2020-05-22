@@ -14,3 +14,6 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 - [exerc00](exerc00): On 10 labelled files.
 
 - [exerc01](exerc01): On a 4.5 hour recording.
+
+- [exerc02](exerc02): As exerc01 but with some underlying adjustments in
+  programs parameters and file organization.
