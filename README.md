@@ -21,3 +21,7 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 - exerc03: related with the "windy" interval in the 4.5 recording:
     - [exerc03a](exerc03a): excluding the windy interval
     - [exerc03b](exerc03b): only considering the windy interval
+
+- [exerc04](exerc04): As exerc01 but with number of refinements iterations
+  set to 120
+
