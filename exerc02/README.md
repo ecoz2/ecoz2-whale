@@ -137,21 +137,23 @@ with all details about rankings:
         --models data/hmms/N17__M4096_t3__a0.3_I1 \
         -M=4096 --tt=TEST --sequences tt-list.csv
 
-The report looks like this (just one data row shown):
+Each data row in the report corresponds to a classification case and looks
+like this with one example:
 
 ```csv
-seq_filename,seq_class_name,correct,rank,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20
-data/sequences/M4096/A/00007.seq,A,*,1,A,C,I2,I3,I4,I,E,D,G2,F,C1,P,Bd,Bm,H,Bu,G,E1,B,M
+data/sequences/M4096/A/00007.seq, A, *, 1, A, C, I2, I3, I4, I, E, D, G2, F, C1, P, Bd, Bm, H, Bu, G, E1, B, M
 ```
 
-Each row corresponds to an classification case and contains:
+The columns are:
 
-- the sequence filename (which in turn has information about the codebook
-  size (4096) and the particular selection number (7))
-- the class name (label) associated with the sequence (`A`)
-- a star `*` when the classification is correct (just as a quick visual element)
-- the rank of the most probable model, with `1` indicating a correct classification
-- then `r1, ..., r<num-models>` columns with the complete ranking of the models
+- `seq_filename`: the sequence filename (`data/sequences/M4096/A/00007.seq`),
+  which in turn has information about the codebook size (4096) and the
+  particular selection number (00007)
+- `seq_class_name`: the label associated with the sequence (`A`)
+- `correct`: a star `*` when the classification is correct, or `!` when incorrect
+  (just as a quick visual element)
+- `rank`: the rank of the most probable model, with `1` indicating a correct classification
+- `r1`, ..., `r<num-models>`: columns with the complete ranking of the models
   in order of decreasing probability.
 
 Based on this report, and along with the original signal and labelling files,
