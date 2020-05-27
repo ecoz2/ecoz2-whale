@@ -171,8 +171,9 @@ the results associated with the signal for certain intervals.
 This shows the location of the selections (delimited by gray vertical lines)
 on both the rank subplot at the top and the spectrogram subplot at the bottom.
 For each selection, the label on the x axis in the rank subplot indicates
-the selection number and the color reflects the rank of the most probable model:
-green for rank 1 (meaning correct classification), and other colors for other ranks.
+the selection number and the color and height of the bar reflect the rank
+of the most probable model: full green bar for rank 1 (meaning correct
+classification), and other colors and less tall bars for other ranks.
 For misclassifications, the label also shows the best model.
 
 The above uses `--cover` to show the relevant interval in the original
