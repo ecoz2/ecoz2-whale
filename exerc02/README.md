@@ -137,8 +137,26 @@ with all details about rankings:
         --models data/hmms/N17__M4096_t3__a0.3_I1 \
         -M=4096 --tt=TEST --sequences tt-list.csv
 
-Then, plots generated using the `c12n.plot.py` utility, which shows results
-associated with the signal for a selected period:
+The report looks like this (just one data row shown):
+
+```csv
+seq_filename,seq_class_name,correct,rank,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12,r13,r14,r15,r16,r17,r18,r19,r20
+data/sequences/M4096/A/00007.seq,A,*,1,A,C,I2,I3,I4,I,E,D,G2,F,C1,P,Bd,Bm,H,Bu,G,E1,B,M
+```
+
+Each row corresponds to an classification case and contains:
+
+- the sequence filename (which in turn has information about the codebook
+  size (4096) and the particular selection number (7))
+- the class name (label) associated with the sequence (`A`)
+- a star `*` when the classification is correct (just as a quick visual element)
+- the rank of the most probable model, with `1` indicating a correct classification
+- then `r1, ..., r<num-models>` columns with the complete ranking of the models
+  in order of decreasing probability.
+
+Based on this report, and along with the original signal and labelling files,
+the `c12n.plot.py` utility was used to generate the plots below, which show
+the results associated with the signal for certain intervals.
 
      c12n.plot.py --cover  \
         --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
@@ -153,14 +171,13 @@ on both the rank subplot at the top and the spectrogram subplot at the bottom.
 For each selection, the label on the x axis in the rank subplot indicates
 the selection number and the color reflects the rank of the most probable model:
 green for rank 1 (meaning correct classification), and other colors for other ranks.
-For misclassifications, the label also shows the winning model.
+For misclassifications, the label also shows the best model.
 
 The above uses `--cover` to show the relevant interval in the original
-signal intersecting the selections in the input file.
+signal containing the selections in the input file.
 
-To put together the selections one after the other, the `--concat` option
-can be used instead:
-
+Alternatively, to put together the selections next to each other, the
+`--concat` option can be used:
 
     c12n.plot.py --concat  \
         --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
@@ -173,7 +190,7 @@ can be used instead:
 In this case, due to the large number of selections, the classification
 labels and the vertical lines delimiting the segments are not displayed.
 
-To restrict the visualization to a particular class or rank, options
+To restrict the visualization to a particular class or rank, the options
 `--class-name` and `--rank` can be used.
 
 For example:
@@ -183,7 +200,5 @@ For example:
         --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
         --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
         --out-prefix c12n/TEST/
-
-generates:
 
 ![](c12n/TEST/c12n_concat_Bd.png)
