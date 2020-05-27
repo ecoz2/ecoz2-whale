@@ -99,14 +99,6 @@ Report: data/codebooks/_/eps_0.0005.rpt
 ...
 ```
 
-The resulting clustering metrics above are shown in the following plot:
-
-```
-cb.plot_evaluation.py data/codebooks/_/eps_0.0005.rpt.csv
-```
-
-![](cb_evaluation.png)
-
 ## Vector quantization
 
 Quantize all vectors (TRAIN and TEST) using a number of the various
@@ -132,3 +124,66 @@ Running ./hmm-exercise.sh
 ![](summary1.png)
 
 ![](summary2.png)
+
+
+## Visualization of some classification results
+
+Classification redone using `--c12n` option to generate report
+[`c12n/TEST/N17__M4096_t3__a0.3_I1.csv`](c12n/TEST/N17__M4096_t3__a0.3_I1.csv)
+with all details about rankings:
+
+     ecoz2 hmm classify \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv \
+        --models data/hmms/N17__M4096_t3__a0.3_I1 \
+        -M=4096 --tt=TEST --sequences tt-list.csv
+
+Then, plots generated using the `c12n.plot.py` utility, which shows results
+associated with the signal for a selected period:
+
+     c12n.plot.py --cover  \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
+        --out-prefix c12n/TEST/
+
+![](c12n/TEST/c12n_cover.png)
+
+This shows the location of the selections (delimited by gray vertical lines)
+on both the rank subplot at the top and the spectrogram subplot at the bottom.
+For each selection, the label on the x axis in the rank subplot indicates
+the selection number and the color reflects the rank of the most probable model:
+green for rank 1 (meaning correct classification), and other colors for other ranks.
+For misclassifications, the label also shows the winning model.
+
+The above uses `--cover` to show the relevant interval in the original
+signal intersecting the selections in the input file.
+
+To put together the selections one after the other, the `--concat` option
+can be used instead:
+
+
+    c12n.plot.py --concat  \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
+        --out-prefix c12n/TEST/
+
+![](c12n/TEST/c12n_concat.png)
+
+In this case, due to the large number of selections, the classification
+labels and the vertical lines delimiting the segments are not displayed.
+
+To restrict the visualization to a particular class or rank, options
+`--class-name` and `--rank` can be used.
+
+For example:
+
+    c12n.plot.py --concat --class Bd \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
+        --out-prefix c12n/TEST/
+
+generates:
+
+![](c12n/TEST/c12n_concat_Bd.png)
