@@ -148,7 +148,7 @@ data/sequences/M4096/A/00007.seq, A, *, 1, A, C, I2, I3, I4, I, E, D, G2, F, C1,
 The columns are:
 
 - `seq_filename`: the sequence filename (`data/sequences/M4096/A/00007.seq`),
-  whose structure has information about particular selection number (00007)
+  whose structure indicates the particular selection number (00007)
 - `seq_class_name`: the label associated with the sequence (A)
 - `correct`: a star `*` when the classification is correct, or `!` when incorrect
   (just as a quick visual element)
