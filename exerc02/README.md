@@ -191,7 +191,7 @@ In this case, due to the large number of selections, the classification
 labels and the vertical lines delimiting the segments are not displayed.
 
 To restrict the visualization to a particular class or rank, the options
-`--class-name` and `--rank` can be used.
+`--class` and `--rank` can be used.
 
 For example:
 
