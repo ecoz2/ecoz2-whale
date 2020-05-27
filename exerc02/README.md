@@ -128,7 +128,8 @@ Running ./hmm-exercise.sh
 
 ## Visualization of some classification results
 
-Classification redone using `--c12n` option to generate report
+Classification done using a new option `--c12n` (for "classification")
+to generate report
 [`c12n/TEST/N17__M4096_t3__a0.3_I1.csv`](c12n/TEST/N17__M4096_t3__a0.3_I1.csv)
 with all details about rankings:
 
@@ -137,8 +138,8 @@ with all details about rankings:
         --models data/hmms/N17__M4096_t3__a0.3_I1 \
         -M=4096 --tt=TEST --sequences tt-list.csv
 
-Each data row in the report corresponds to a classification case and looks
-like this with one example:
+Each data row in the report corresponds to a classification case.
+With one row as an example:
 
 ```csv
 data/sequences/M4096/A/00007.seq, A, *, 1, A, C, I2, I3, I4, I, E, D, G2, F, C1, P, Bd, Bm, H, Bu, G, E1, B, M
@@ -147,17 +148,18 @@ data/sequences/M4096/A/00007.seq, A, *, 1, A, C, I2, I3, I4, I, E, D, G2, F, C1,
 The columns are:
 
 - `seq_filename`: the sequence filename (`data/sequences/M4096/A/00007.seq`),
-  which in turn has information about the codebook size (4096) and the
-  particular selection number (00007)
-- `seq_class_name`: the label associated with the sequence (`A`)
+  whose structure has information about particular selection number (00007)
+- `seq_class_name`: the label associated with the sequence (A)
 - `correct`: a star `*` when the classification is correct, or `!` when incorrect
   (just as a quick visual element)
-- `rank`: the rank of the most probable model, with `1` indicating a correct classification
-- `r1`, ..., `r<num-models>`: columns with the complete ranking of the models
+- `rank`: the rank of the model corresponding to the sequence (that is, with
+  same class name), with 1 indicating a correct classification,
+  2 indicating it was 2nd place, etc.
+- `r1`, ...: columns with the complete ranking of the models
   in order of decreasing probability.
 
 Based on this report, and along with the original signal and labelling files,
-the `c12n.plot.py` utility was used to generate the plots below, which show
+a python script was used to generate the plots below, which show
 the results associated with the signal for certain intervals.
 
      c12n.plot.py --cover  \
