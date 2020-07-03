@@ -227,3 +227,9 @@ A couple of more classes:
         --out-prefix c12n/TEST/
 
 ![](c12n/TEST/c12n_concat_F.png)
+
+
+----
+
+For possible reference, [c12n/TRAIN/](c12n/TRAIN/) contains some similar plots
+but for training instances.

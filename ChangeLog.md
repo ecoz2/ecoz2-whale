@@ -1,6 +1,8 @@
 2020-06
 
 - exerc02: run `c12n.plot.py` for classes A and F (test cases)
+- exerc02: For possible reference, [exerc02/c12n/TRAIN/](exerc02/c12n/TRAIN/)
+  with some similar plots but for training instances.
 
 2020-05
 
