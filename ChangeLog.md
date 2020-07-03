@@ -1,3 +1,7 @@
+2020-06
+
+- exerc02: run `c12n.plot.py` for classes A and F (test cases)
+
 2020-05
 
 - rerun exerc02, resulting in an increase in average accuracy to 75% from 70%.

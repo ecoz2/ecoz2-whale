@@ -207,3 +207,23 @@ For example:
         --out-prefix c12n/TEST/
 
 ![](c12n/TEST/c12n_concat_Bd.png)
+
+----
+
+A couple of more classes:
+
+    c12n.plot.py --concat --class A \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
+        --out-prefix c12n/TEST/
+
+![](c12n/TEST/c12n_concat_A.png)
+
+    c12n.plot.py --concat --class F \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc01/MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv \
+        --c12n c12n/TEST/N17__M4096_t3__a0.3_I1.csv   \
+        --out-prefix c12n/TEST/
+
+![](c12n/TEST/c12n_concat_F.png)
