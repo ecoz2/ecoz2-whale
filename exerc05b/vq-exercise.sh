@@ -15,8 +15,8 @@ train_start=$SECONDS
 echo "TRAINING..."
 
 # (Note: not using `parallel` as `vq learn` already takes advantage of available cores)
-echo "$classes" | while read -r class; do
-  ecoz2 vq learn --prediction-order=${P} --epsilon=${e} --class-name={} --predictors tt-list.csv &
+echo "$classes" | while read class; do
+  ecoz2 vq learn --prediction-order=${P} --epsilon=${e} --class-name=${class} --predictors tt-list.csv &
 done
 wait
 train_end=$SECONDS
