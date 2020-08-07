@@ -1,3 +1,7 @@
+2020-08
+
+- add [exerc05](exerc05), as exerc1 but with the P = 20.
+
 2020-06
 
 - exerc02: run `c12n.plot.py` for classes A and F (test cases)
