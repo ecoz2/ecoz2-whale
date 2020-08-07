@@ -1,5 +1,7 @@
 2020-08
 
+- add [exerc05b](exerc05b), as exerc05 but only considering classes with at least 100 instances.
+  Besides HMM and Naive Bayes, this also has the VQ based classification.
 - add [exerc05](exerc05), as exerc1 but with the P = 20.
 
 2020-06
