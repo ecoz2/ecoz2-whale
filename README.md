@@ -3,7 +3,7 @@ on labelled whale song unit data.
 
 ## Status
 
-Complete exercises but no model tuning per se yet.
+Complete exercises with some level of model tuning.
 
 A general presentation about VQ/HMM and its application on the
 initial set of exercises described here can be found at
@@ -25,13 +25,10 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 - [exerc04](exerc04): As exerc01 but with number of refinements iterations
   set to 120
 
-- [exerc05](exerc05): As exerc01 but with order of prediction P = 20
-  according to rule of thumb P = 4 + f_s / 1000,
-  where the sampling frequency f_s is 16000 in our case.
-
-- [exerc05b](exerc05b): As exerc05 but only considering classes with
-  at least 100 instances.
-
-- [exerc05c](exerc05c): As exerc05 but only considering classes with
-  at least 200 instances.
+- exerc05: As exerc01 but with order of prediction P = 20
+  according to rule of thumb P = 4 + f<sub>s</sub> / 1000,
+  where the sampling frequency f<sub>s</sub> is 16kHz in our case.
+    - [exerc05](exerc05a): Other parameters as in previous exercises
+    - [exerc05b](exerc05b): Only considering classes with at least 100 instances
+    - [exerc05c](exerc05c): Only considering classes with at least 200 instances
 
