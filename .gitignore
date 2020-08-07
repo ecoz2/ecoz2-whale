@@ -4,11 +4,8 @@
 *.seq
 *.mm
 *.nb
-exerc01/data
-exerc01/results
-exerc02/data
-exerc02/results
-exerc03/data
-exerc03/results
+data
+results
 stderr
 seq
+.vscode

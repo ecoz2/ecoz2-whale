@@ -6,7 +6,7 @@ Again, original data:
 - Selection file: `MARS_20161221_000046_SongSession_16kHz_HPF5HzNorm_labels.csv`.
 
 In this exercise, P = 20 according to rule of thumb P = 4 + f_s / 1000,
-where the sampling frequence f_s is 16000 in our case.
+where the sampling frequency f_s is 16000 in our case.
 
 This exercise based on the signals already extracted under `../exerc02/data/signals/`.
 

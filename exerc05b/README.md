@@ -191,7 +191,7 @@ The best combination (N=9, M=4096, I=1):
  
 ![](hmm-summary-1.png) 
 
-Combinations resulting in avergace accuracy >= 79%:
+Combinations resulting in average accuracy >= 79%:
 
 ![](hmm-summary-gt-79.png) 
 
