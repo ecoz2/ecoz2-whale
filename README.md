@@ -19,8 +19,9 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
   programs parameters and file organization.
 
 - exerc03: related with the "windy" interval in the 4.5 recording:
-    - [exerc03a](exerc03a): excluding the windy interval
-    - [exerc03b](exerc03b): only considering the windy interval
+
+  - [exerc03a](exerc03a): excluding the windy interval
+  - [exerc03b](exerc03b): only considering the windy interval
 
 - [exerc04](exerc04): As exerc01 but with number of refinements iterations
   set to 120
@@ -28,7 +29,10 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 - exerc05: As exerc01 but with order of prediction P = 20
   according to rule of thumb P = 4 + f<sub>s</sub> / 1000,
   where the sampling frequency f<sub>s</sub> is 16kHz in our case.
-    - [exerc05](exerc05a): Other parameters as in previous exercises
-    - [exerc05b](exerc05b): Only considering classes with at least 100 instances
-    - [exerc05c](exerc05c): Only considering classes with at least 200 instances
 
+  - [exerc05](exerc05a): Other parameters as in previous exercises
+  - [exerc05b](exerc05b): Only considering classes with at least 100 instances
+  - [exerc05c](exerc05c): Only considering classes with at least 200 instances
+
+- exerc06: As exerc05c but merging classes "I" and "I2" into a "II" class.
+  - [exerc06](exerc06)
