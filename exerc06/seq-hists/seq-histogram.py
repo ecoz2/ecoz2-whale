@@ -9,9 +9,12 @@ def do_plot(csv_filename, class_name):
     df = pd.read_csv(csv_filename)
     n = len(df)
     mean = df['length'].mean()
+    min = df['length'].min()
+    max = df['length'].max()
 
     # print(df)
-    print('{}: n={} mean={:.1f}'.format(csv_filename, n, mean))
+    print('{}: n={} mean={:.1f} min={:.1f} max={:.1f}'.format(
+      csv_filename, n, mean, min, max))
 
     df.hist(bins=bins)
     plt.grid(axis='y', alpha=0.85)
@@ -19,6 +22,7 @@ def do_plot(csv_filename, class_name):
     plt.ylabel('Frequency')
     plt.title('Sequence Length Histogram (class: {})'.format(class_name))
     plt.text(50, 20, r'$n={}, \mu={:.1f}, b={}$'.format(n, mean, bins))
+    plt.gca().set_xbound(0, 400)
     # plt.show()
 
     png_filename = '{}-histogram.png'.format(csv_filename)
