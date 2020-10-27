@@ -80,22 +80,18 @@ VQ based training and classification done with the help of this script:
 
 Classification results:
 
+(note: results for the various codebook size manually captured in nb-summary.csv.)
+
 ```
-CLASSIFYING TEST PREDICTORS
+python3 ./summary-parallel.py nb-summary.csv
+```
+
+![](vq-summary.png)
+
+Looking at the M = 1024 case:
+
+```
 ecoz2 vq classify --codebooks data/codebooks/[A-Z]*/eps_0.0005_M_1024.cbook --predictors tt-list.csv --tt=TEST
-number of codebooks: 8  number of predictors: 910
-show_ranked = false
-
-Loading models:
- 0: data/codebooks/A/eps_0.0005_M_1024.cbook
- 1: data/codebooks/Bm/eps_0.0005_M_1024.cbook
- 2: data/codebooks/C/eps_0.0005_M_1024.cbook
- 3: data/codebooks/E/eps_0.0005_M_1024.cbook
- 4: data/codebooks/F/eps_0.0005_M_1024.cbook
- 5: data/codebooks/G2/eps_0.0005_M_1024.cbook
- 6: data/codebooks/I3/eps_0.0005_M_1024.cbook
- 7: data/codebooks/II/eps_0.0005_M_1024.cbook
-
 
      Confusion matrix:
             0   1   2   3   4   5   6   7     tests   errors
