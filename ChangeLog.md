@@ -3,6 +3,7 @@
 - add [exerc06](exerc06)
   - as exerc05c but merging "I" and "I2" (into a "II" class)
   - HMM part updated with a rerun using `double` for probabilities (ecoz2 v0.5.1)
+  - add [sequence length histograms](exerc06/seq-hists/)
 
 2020-08
 

@@ -145,6 +145,10 @@ $ for M in 0032 0064 0128 0256 0512 1024 2048 4096; do
 done
 ```
 
+### Sequence length histograms
+
+See [seq-hists](seq-hists/).
+
 ## HMM training and classification
 
 ```
