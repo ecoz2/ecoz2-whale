@@ -1,3 +1,9 @@
+2020-10
+
+- add [exerc06](exerc06)
+  - as exerc05c but merging "I" and "I2" (into a "II" class)
+  - HMM part updated with a rerun using `double` for probabilities (ecoz2 v0.5.1)
+
 2020-08
 
 - add [exerc05b](exerc05b), as exerc05 but only considering classes with at least 100 instances.
@@ -22,12 +28,10 @@
 - general update of the exerc01 exercise,
   see [exerc01/README.md](exerc01/README.md).
 
-
 2020-03
 
 - run VQ based classification.
   see [exerc01/vq.md](exerc01/vq.md).
-    
 - HMM training parameter variations [exerc01/README.md](exerc01/README.md).
 
 2020-03-14
