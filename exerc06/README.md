@@ -199,7 +199,7 @@ The best combination (`N=3, M=2048, I=1`):
 ### Sequence Classification Rank vs. Length
 
 ```
-python3 seq-len-rank-scatter.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv seq-lens.csv
+python3 seq-len-rank-scatter.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv seq-hists/seq-lengths.csv
 ```
 
 ![](seq-len-rank-scatter.png)
