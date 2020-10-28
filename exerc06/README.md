@@ -204,9 +204,12 @@ python3 seq-len-rank-scatter.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv seq-lens.csv
 
 ![](seq-len-rank-scatter.png)
 
-- correct classifications (`rank=1`) seems pretty well distributed across the
-  various sequence lengths
-- incorrect classifications tend somewhat to happen with shorter sequences
+- Correct classifications (`rank=1`) seem pretty well distributed across the
+  various sequence lengths (see histogram below)
+- Incorrect classifications seem to also align with the overall
+  sequence length distribution.
+  In other words, as one would expect, classification accuracy should not be
+  impacted by the sequence length per se.
 
 ## ![](seq-hists/ALL-histogram.png)
 

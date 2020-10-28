@@ -2,6 +2,12 @@
 
 Based on the TEST sequences.
 
+```
+python3 seq-hists/seq-len-extract.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv seq-hists/seq-lengths.csv
+
+python3 seq-hists/seq-histogram.py seq-hists/seq-lengths.csv
+```
+
 In each of the plots below:
 
 - `n` is the number of sequences
