@@ -1,5 +1,7 @@
 ## Sequence length histograms
 
+Based on the TEST sequences.
+
 In each of the plots below:
 
 - `n` is the number of sequences
@@ -11,12 +13,17 @@ In each of the plots below:
 
 All plots on the same `x` axis range to facilitate comparison.
 
-![](seq-lengths-M2048-A.csv-histogram.png)
-![](seq-lengths-M2048-Bm.csv-histogram.png)
-![](seq-lengths-M2048-C.csv-histogram.png)
-![](seq-lengths-M2048-E.csv-histogram.png)
-![](seq-lengths-M2048-F.csv-histogram.png)
-![](seq-lengths-M2048-G2.csv-histogram.png)
-![](seq-lengths-M2048-I3.csv-histogram.png)
-![](seq-lengths-M2048-II.csv-histogram.png)
-![](seq-lengths-M2048.csv-histogram.png)
+First plot with sequences across all classes:
+
+![](ALL-histogram.png)
+
+Per class:
+
+![](A-histogram.png)
+![](Bm-histogram.png)
+![](C-histogram.png)
+![](E-histogram.png)
+![](F-histogram.png)
+![](G2-histogram.png)
+![](I3-histogram.png)
+![](II-histogram.png)

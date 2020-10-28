@@ -196,7 +196,19 @@ The best combination (`N=3, M=2048, I=1`):
   avg_accuracy   87.53%
 ```
 
----
+### Sequence Classification Rank vs. Length
+
+```
+python3 seq-len-rank-scatter.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv seq-lens.csv
+```
+
+![](seq-len-rank-scatter.png)
+
+- correct classifications (`rank=1`) seems pretty well distributed across the
+  various sequence lengths
+- incorrect classifications tend somewhat to happen with shorter sequences
+
+## ![](seq-hists/ALL-histogram.png)
 
 ## Naive Bayes training and classification
 
