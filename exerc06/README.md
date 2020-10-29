@@ -83,7 +83,7 @@ Classification results:
 (note: results for the various codebook size manually captured in nb-summary.csv.)
 
 ```
-python3 ./summary-parallel.py nb-summary.csv
+python3 ./summary-parallel.py vq-summary.csv
 ```
 
 ![](vq-summary.png)
@@ -165,9 +165,15 @@ Some of the best combinations:
 
 ![](hmm-summary-some.png)
 
-The best combination (`N=3, M=2048, I=1`):
+The best combination (`N=3, M=2048, I=1`; `A=0.3` not plotted):
 
 ![](hmm-summary-1.png)
+
+```
+ecoz2 hmm classify --c12n c12n/TEST/N3__M2048_t3__a0.3_I1.csv \
+                   --models data/hmms/N3__M2048_t3__a0.3_I1 \
+                   -M=2048 --tt=TEST --sequences tt-list.csv
+```
 
 ```
      Confusion matrix:
@@ -226,6 +232,10 @@ python3 ./summary-parallel.py nb-summary.csv
 For `M=4096`:
 
 ```
+ecoz2 nb classify --models data/nbs/M${M} -M=${M} --tt=TEST --sequences tt-list.csv
+```
+
+```
      Confusion matrix:
             0   1   2   3   4   5   6   7     tests   errors
 
@@ -238,17 +248,16 @@ G2     5    0   0   2   2   0  58   0   0       62       4
 I3     6    0   1   0   0   0   0  60   4       65       5
 II     7    1   0   3  19   1  16   8 189      237      48
 
-     class     accuracy    tests      candidate order
-A        0       96.12%   103         99   3   0   1   0   0   0   0
-Bm       1       82.79%   122        101   9   8   2   1   1   0   0
-C        2       79.09%   110         87  15   2   5   0   1   0   0
-E        3       77.62%   143        111  20   7   5   0   0   0   0
-F        4       89.71%    68         61   5   0   1   1   0   0   0
-G2       5       93.55%    62         58   3   1   0   0   0   0   0
-I3       6       92.31%    65         60   5   0   0   0   0   0   0
-II       7       79.75%   237        189  38   6   2   2   0   0   0
+     class     accuracy   tests       candidate order
+A        0       96.12%     103         99    3    0    1    0    0    0    0
+Bm       1       82.79%     122        101    9    8    2    1    1    0    0
+C        2       79.09%     110         87   15    2    5    0    1    0    0
+E        3       77.62%     143        111   20    7    5    0    0    0    0
+F        4       89.71%      68         61    5    0    1    1    0    0    0
+G2       5       93.55%      62         58    3    1    0    0    0    0    0
+I3       6       92.31%      65         60    5    0    0    0    0    0    0
+II       7       79.75%     237        189   38    6    2    2    0    0    0
 
-       TOTAL     84.18%   910        766  98  24  16   4   2   0   0
-  avg_accuracy  86.365685%
-    error_rate  13.6343155%
+       TOTAL     84.18%     910        766   98   24   16    4    2    0    0
+  avg_accuracy   86.37%
 ```

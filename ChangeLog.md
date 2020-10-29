@@ -5,6 +5,8 @@
   - HMM part updated with a rerun using `double` for probabilities (ecoz2 v0.5.1)
   - add [sequence length histograms](exerc06/seq-hists/)
   - add sequence classification rank vs. length scatter plot
+  - adjust exerc06/summary-parallel.py to use log scale for `M`
+  - add some more HMM runs
 
 2020-08
 
