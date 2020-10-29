@@ -71,11 +71,9 @@ function one_exercise() {
   echo " train_avg_accuracy: $train_avg_accuracy%"
   echo "  test_avg_accuracy: $test_avg_accuracy%"
   echo
-  # summary_line="$M, $train_accuracy, $train_avg_accuracy, $test_accuracy, $test_avg_accuracy"
-  summary_line="$M, $test_accuracy, $test_avg_accuracy"
+  summary_line="$M, $train_accuracy, $train_avg_accuracy, $test_accuracy, $test_avg_accuracy"
   if [ ! -f nb-summary.csv ]; then
-    # echo "M,Train Ac,Train avgAc,Test Ac,Test avgAc" > nb-summary.csv
-    echo "M,Test Ac,Test avgAc" > nb-summary.csv
+    echo "M,Train Ac,Train avgAc,Test Ac,Test avgAc" > nb-summary.csv
   fi
   echo "$summary_line" >> nb-summary.csv
   echo

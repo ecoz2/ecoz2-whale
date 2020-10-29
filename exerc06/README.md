@@ -262,13 +262,16 @@ II       7       79.75%     237        189   38    6    2    2    0    0    0
   avg_accuracy   86.37%
 ```
 
-## Markov training and classification
+## Markov chain model training and classification
 
 ```
 ./mm-exercise.sh
 
-python3 ./summary-parallel.py mm-summary.csv
+python3 ./summary-parallel.py mm-summary.csv show-train
 ```
+
+In this plot we also include the average accuraccy over the training instances ('Train avgAc')
+as a way to easily compare it with the average accuracy over the test instances.
 
 ![](mm-summary.png)
 
