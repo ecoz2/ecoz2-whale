@@ -261,3 +261,46 @@ II       7       79.75%     237        189   38    6    2    2    0    0    0
        TOTAL     84.18%     910        766   98   24   16    4    2    0    0
   avg_accuracy   86.37%
 ```
+
+## Markov training and classification
+
+```
+./mm-exercise.sh
+
+python3 ./summary-parallel.py mm-summary.csv
+```
+
+![](mm-summary.png)
+
+For `M=512`:
+
+```
+ecoz2 mm classify --models data/mms/M512 -M=512 --tt=TEST --sequences tt-list.csv
+```
+
+```
+     Confusion matrix:
+            0   1   2   3   4   5   6   7     tests   errors
+
+A      0  101   0   1   1   0   0   0   0      103       2
+Bm     1    3 110   2   0   0   1   0   6      122      12
+C      2    0   0 106   1   3   0   0   0      110       4
+E      3    0   0  43  92   2   6   0   0      143      51
+F      4    0   0   3   1  64   0   0   0       68       4
+G2     5    0   0  14   2   0  46   0   0       62      16
+I3     6    4  13   0   0   0   0  38  10       65      27
+II     7    1   8  46  15   3  13   1 150      237      87
+
+     class     accuracy   tests       candidate order
+A        0       98.06%     103        101    1    0    1    0    0    0    0
+Bm       1       90.16%     122        110    4    4    3    1    0    0    0
+C        2       96.36%     110        106    3    0    1    0    0    0    0
+E        3       64.34%     143         92   29    9    6    7    0    0    0
+F        4       94.12%      68         64    3    1    0    0    0    0    0
+G2       5       74.19%      62         46   11    5    0    0    0    0    0
+I3       6       58.46%      65         38   20    6    1    0    0    0    0
+II       7       63.29%     237        150   51   22    8    6    0    0    0
+
+       TOTAL     77.69%     910        707  122   47   20   14    0    0    0
+  avg_accuracy   79.87%
+```

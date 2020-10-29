@@ -7,6 +7,7 @@
   - add sequence classification rank vs. length scatter plot
   - adjust exerc06/summary-parallel.py to use log scale for `M`
   - add some more HMM runs
+  - add MM exercise
 
 2020-08
 
