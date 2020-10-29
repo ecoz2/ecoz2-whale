@@ -80,7 +80,7 @@ VQ based training and classification done with the help of this script:
 
 Classification results:
 
-(note: results for the various codebook size manually captured in nb-summary.csv.)
+(note: results for the various codebook size manually captured in vq-summary.csv.)
 
 ```
 python3 ./summary-parallel.py vq-summary.csv
