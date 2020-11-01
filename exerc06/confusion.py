@@ -3,6 +3,7 @@
 import json
 import pandas as pd
 from sklearn import metrics
+import matplotlib.pyplot as plt
 
 # ./confusion.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv
 # ./confusion.py y_true_pred_TODO.json
@@ -34,10 +35,24 @@ def main(args):
   y_pred = y_true_pred['y_pred']
 
   print('\nconfusion matrix:')
-  print(metrics.confusion_matrix(y_true, y_pred))
+  cm = metrics.confusion_matrix(y_true, y_pred)
+  print(cm)
 
   print('\nclassification report:')
   print(metrics.classification_report(y_true, y_pred, digits=4))
+
+  if args.plot_confusion:
+    # https://vitalflux.com/micro-average-macro-average-scoring-metrics-multi-class-classification-python/
+    fig, ax = plt.subplots(figsize=(6, 6))
+    ax.matshow(cm, cmap=plt.cm.Oranges, alpha=0.3)
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            ax.text(x=j, y=i, s=cm[i, j], va='center', ha='center', size='xx-large')
+
+    plt.xlabel('Predicted', fontsize=18)
+    plt.ylabel('Actuals', fontsize=18)
+    plt.title('Confusion Matrix', fontsize=18)
+    plt.show()
 
 
 def parse_args():
@@ -49,6 +64,7 @@ def parse_args():
     )
 
     parser.add_argument('--source', required=True)
+    parser.add_argument('--plot-confusion', action='store_true')
     parser.add_argument('--verbose', action='store_true')
 
     return parser.parse_args()
