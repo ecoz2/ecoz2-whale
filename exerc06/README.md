@@ -202,6 +202,38 @@ ecoz2 hmm classify --c12n c12n/TEST/N3__M2048_t3__a0.3_I1.csv \
   avg_accuracy   87.53%
 ```
 
+Using sklearn metric:
+
+```
+confusion matrix:
+[[101   0   1   0   0   1   0   0]
+ [  3 104   0   0   0   0  12   3]
+ [  0   0  89   7   5   5   0   4]
+ [  0   0  10 118   0  10   0   5]
+ [  0   1   1   2  62   2   0   0]
+ [  0   0   2   3   0  57   0   0]
+ [  1   2   0   0   0   0  60   2]
+ [  2   2   6  21   3  12   6 185]]
+
+classification report:
+              precision    recall  f1-score   support
+
+           A     0.9439    0.9806    0.9619       103
+          Bm     0.9541    0.8525    0.9004       122
+           C     0.8165    0.8091    0.8128       110
+           E     0.7815    0.8252    0.8027       143
+           F     0.8857    0.9118    0.8986        68
+          G2     0.6552    0.9194    0.7651        62
+          I3     0.7692    0.9231    0.8392        65
+          II     0.9296    0.7806    0.8486       237
+
+    accuracy                         0.8527       910
+   macro avg     0.8420    0.8753    0.8537       910
+weighted avg     0.8641    0.8527    0.8542       910
+```
+
+![](confusion.png)
+
 ### Sequence Classification Rank vs. Length
 
 ```
