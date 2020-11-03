@@ -1,16 +1,16 @@
 function main() {
   main_start=$SECONDS
 
-  for N in $(seq 1 10); do
-    for M in 512 1024 2048 4096; do
-      for A in 0.3; do
-        for I in 0 1 5 10 -1; do
-          one_exercise ${N} ${M} ${A} ${I}
-        done
-      done
-    done
-  done
-#  one_exercise 3 2048 0.3 -1
+  # for N in $(seq 1 10); do
+  #   for M in 512 1024 2048 4096; do
+  #     for A in 0.3; do
+  #       for I in 0 1 5 10 -1; do
+  #         one_exercise ${N} ${M} ${A} ${I}
+  #       done
+  #     done
+  #   done
+  # done
+  one_exercise 4 2048 0.3 1
 
   main_end=$SECONDS
   main_duration=$((main_end - main_start))

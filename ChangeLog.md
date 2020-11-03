@@ -1,3 +1,8 @@
+2020-11
+
+- rerun exerc05c to compare HMM results for I and I2 with
+  the merged I+I2=II in exerc06
+
 2020-10
 
 - add [exerc06](exerc06)
