@@ -339,3 +339,13 @@ II       7       63.29%     237        150   51   22    8    6    0    0    0
        TOTAL     77.69%     910        707  122   47   20   14    0    0    0
   avg_accuracy   79.87%
 ```
+
+---
+
+# some plots
+
+    c12n.plot.py --concat --class II \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments labels_with_I_and_I2_merged_into_II.csv \
+        --c12n c12n/TEST/N3__M2048_t3__a0_I1.csv  \
+        --out-prefix c12n/TEST/

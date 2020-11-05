@@ -260,6 +260,16 @@ ipython3 ../exerc01/summary-parallel.py nb-summary.csv
 
 ![](nb-summary.png)
 
-```
+---
 
-```
+# some plots
+
+    PATH=/usr/local/Cellar/python@3.8/3.8.6_1/bin:$PATH
+    PATH=../../ecoz2/ecoz2/_out/bin:../../ecoz2/ecoz2/src/py:$PATH
+
+
+    c12n.plot.py --concat --class I \
+        --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
+        --segments ../exerc06/labels_with_I_and_I2_merged_into_II.csv \
+        --c12n c12n/TEST/N4__M2048_t3__a0.3_I1.csv  \
+        --out-prefix c12n/TEST/
