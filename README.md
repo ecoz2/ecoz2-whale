@@ -36,3 +36,7 @@ https://github.com/ecoz2/ecoz2-doc/blob/master/exploration/vqhmm-whale.pdf.
 
 - exerc06: As exerc05c but merging classes "I" and "I2" into a "II" class.
   - [exerc06](exerc06)
+
+## Signal inspection
+
+See [signal-inspection](signal-inspection).
