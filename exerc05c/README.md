@@ -273,3 +273,7 @@ ipython3 ../exerc01/summary-parallel.py nb-summary.csv
         --segments ../exerc06/labels_with_I_and_I2_merged_into_II.csv \
         --c12n c12n/TEST/N4__M2048_t3__a0.3_I1.csv  \
         --out-prefix c12n/TEST/
+
+# Inspecting some misclassifications
+
+See [inspect-misclassifications](inspect-misclassifications/).
