@@ -54,7 +54,8 @@ def do_plot(csv_filename, show_train):
           return range
 
     if csv_filename == 'nb-summary.csv':
-        add_other_dimension('P', summary['P'])
+        if 'P' in summary:
+            add_other_dimension('P', summary['P'])
         add_m_dimension(summary['M'])
         range = add_train_if_so_desired()
 
