@@ -16,7 +16,7 @@ function main() {
   W=45
   O=15
 
-  for P in 160; do
+  for P in 20 24 30 34 38 42 50 56 60 64 68 76 80 90 100 120 140 160 180 200; do
     mkdir -p "P${P}"
     cd       "P${P}"
 
