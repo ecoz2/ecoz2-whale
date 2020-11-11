@@ -13,11 +13,39 @@ PATH="$HOME/.local/bin:$PATH"
 function main() {
   main_start=$SECONDS
 
-  for P in 40; do
+  W=45
+  O=15
+
+  for P in 160; do
     mkdir -p "P${P}"
     cd       "P${P}"
-    for M in 32 64 128 256 512 1024 2048 4096; do
-      one_exercise ${P} 45 15 ${M}
+
+    ## ------
+    echo "P=${P} generating LPC predictors"
+    for tt in TRAIN TEST; do
+      echo "tt=${tt}"
+      ecoz2 lpc -P ${P} -W ${W} -O ${O} \
+          --signals ../tt-list.csv \
+          --signals-dir-template ../data/signals/{class}/{selection}.wav \
+          --tt=${tt}
+    done
+
+    ## ------
+    echo "P=${P} CODEBOOK GENERATION:"
+    ecoz2 vq learn --prediction-order ${P} --epsilon 0.0005 --predictors ../tt-list.csv
+
+    ## ------
+    echo "P=${P} VECTOR QUANTIZATION:"
+    # for M in 0016 0032 0064 0128 0256 0512 1024 2048 4096; do
+    for M in 0512 1024 2048 4096; do
+      echo $M
+    done | parallel "ecoz2 vq quantize --codebook data/codebooks/_/eps_0.0005_M_{}.cbook data/predictors"
+
+    ## ------
+    echo "P=${P} TRAINING/CLASSIFICATION:"
+    # for M in 32 64 128 256 512 1024 2048 4096; do
+    for M in 512 1024 2048 4096; do
+      one_exercise ${P} ${W} ${O} ${M}
     done
     cd ..
   done
@@ -37,43 +65,17 @@ function one_exercise() {
   echo "  P = $P  M = $M"
   echo
 
-  # ## ------
-  echo "P=${P} generating LPC predictors"
-  ecoz2 lpc -P ${P} -W ${W} -O ${O} -m 200 ../data/signals
-
-  ## ------
-  ## TODO: the "split" should be on the signal segments!
-  echo "P=${P} generating TRAIN and TEST predictor lists"
-  echo "tt,class,selection" > tt-list.csv
-  for class in `ls data/predictors/`; do
-    ecoz2 util split --train-fraction 0.8 --file-ext .prd --files data/predictors/${class} >> tt-list.csv
-  done
-  echo "train instances: `grep TRAIN tt-list.csv| wc -l`"
-  echo  "test instances: `grep TEST tt-list.csv| wc -l`"
-
-  ## ------
-  echo "P=${P} CODEBOOK GENERATION:"
-  ecoz2 vq learn --prediction-order ${P} --epsilon 0.0005 --predictors tt-list.csv
-
-  ## ------
-  echo "P=${P} VECTOR QUANTIZATION:"
-  for M in 0016 0032 0064 0128 0256 0512 1024 2048 4096; do
-    echo $M
-  done | parallel "ecoz2 vq quantize --codebook data/codebooks/_/eps_0.0005_M_{}.cbook data/predictors"
-
-  ## ------
-
   echo "P=${P} TRAINING..."
-  
+
   train_start=$SECONDS
 
   ## If using `gnu parallel`:
   ls data/sequences/M${M} | \
-    parallel "ecoz2 nb learn -M=${M} --class-name={} tt-list.csv"
+    parallel "ecoz2 nb learn -M=${M} --class-name={} ../tt-list.csv"
 
   ## Otherwise:
   # for class in `ls data/sequences/M${M}/`; do
-  #   CMD="ecoz2 nb learn -M=${M} --class-name=${class} tt-list.csv"
+  #   CMD="ecoz2 nb learn -M=${M} --class-name=${class} ../tt-list.csv"
   #   echo "running: ${CMD}"
   #   ${CMD} &
   # done
@@ -88,7 +90,7 @@ function one_exercise() {
   test_start=$SECONDS
   echo
   echo "P=${P} CLASSIFYING TRAINING SEQUENCES"
-  cmd="ecoz2 nb classify --models data/nbs/M${M} -M=${M} --tt=TRAIN --sequences tt-list.csv"
+  cmd="ecoz2 nb classify --models data/nbs/M${M} -M=${M} --tt=TRAIN --sequences ../tt-list.csv"
   echo "$cmd"
   $cmd
 
@@ -97,7 +99,7 @@ function one_exercise() {
 
   echo
   echo "P=${P} CLASSIFYING TEST SEQUENCES"
-  cmd="ecoz2 nb classify --models data/nbs/M${M} -M=${M} --tt=TEST --sequences tt-list.csv"
+  cmd="ecoz2 nb classify --models data/nbs/M${M} -M=${M} --tt=TEST --sequences ../tt-list.csv"
   echo "$cmd"
   $cmd
 
