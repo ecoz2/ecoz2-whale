@@ -2,12 +2,11 @@ set -ue
 
 P=$1
 M=$2
-N=$3
+O=$3
 
 dest_dir="P${P}/M${M}"
 
 PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/.cargo/bin:$PATH"
 
 # for `run-pom.sh`:
 export POME_EXPLORATION_DIR=/Users/carueda/github/ecoz2/pomegranate-exploration
@@ -25,7 +24,7 @@ function generate_pickle_sequences() {
   for tt in TRAIN TEST; do
     for class in A Bm C E F G2 I3 II; do
       pickle="${my_dir}/${out_dir_sequences}/${tt}_sequences_$class.pickle"
-      echo "pickle=${pickle}"
+      # echo "pickle=${pickle}"
       ecoz2 seq show --pickle ${pickle} --class-name=$class \
             --codebook-size=${M} --tt=${tt} ../tt-list.csv
     done
@@ -35,17 +34,19 @@ function generate_pickle_sequences() {
 }
 
 function train() {
+  echo "TRAINING"
   work_dir=${dest_dir}
-  run-pom.sh ./hmm_train.sh ${P} ${M} ${N} ${work_dir}
+  run-pom.sh ./mchain_train.sh ${P} ${M} ${O} ${work_dir}
 }
 
 function classify() {
+  echo "CLASSIFYING"
   work_dir=${dest_dir}
-  run-pom.sh ./hmm_classify.sh ${P} ${M} ${N} ${work_dir}
+  run-pom.sh ./mchain_classify.sh ${P} ${M} ${O} ${work_dir}
 }
 
 function main() {
-  # generate_pickle_sequences
+  generate_pickle_sequences
   train
   classify
 }

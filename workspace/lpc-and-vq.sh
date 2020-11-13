@@ -1,6 +1,7 @@
 set -ue
 
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.cargo/bin:$PATH"
 
 ## extract signal segments (an one-off step):
 # export echo $M=/u/carueda/soundscape/workspace/source_data/MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav
@@ -13,12 +14,10 @@ PATH="$HOME/.local/bin:$PATH"
 function main() {
   main_start=$SECONDS
 
-  for P in 42; do
+  for P in 45; do
     mkdir -p "P${P}"
     cd       "P${P}"
-    for M in 32 64 128 256 512 1024 2048 4096; do
-      one_exercise ${P} 45 15 ${M}
-    done
+    run ${P} 45 15
     cd ..
   done
 
@@ -28,16 +27,15 @@ function main() {
   duration_string "==DONE MAIN==" $main_duration
 }
 
-function one_exercise() {
+function run() {
   P=$1
   W=$2
   O=$3
-  M=$4
   echo "-- lpc-and-vq.sh --"
-  echo "  P = $P  M = $M"
+  echo "  P = $P  W = $W  O = $O"
   echo
 
-  # ## ------
+  ## ------
   echo "P=${P} generating LPC predictors"
   ecoz2 lpc -P ${P} -W ${W} -O ${O} -m 200 ../data/signals
 
