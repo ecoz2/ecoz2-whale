@@ -3,12 +3,12 @@
 import json
 import pandas as pd
 import numpy as np
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix, classification_report, matthews_corrcoef
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# ./confusion.py c12n/TEST/N3__M2048_t3__a0.3_I1.csv
-# ./confusion.py y_true_pred_TODO.json
+# ./confusion.py --source c12n/TEST/N3__M2048_t3__a0.3_I1.csv
+# ./confusion.py --source y_true_pred_TODO.json
 
 
 def from_csv(filename: str):
@@ -111,6 +111,8 @@ def main(args):
 
   print('\nclassification report:')
   print(classification_report(y_true, y_pred, digits=4))
+
+  print('MCC = {}'.format(matthews_corrcoef(y_true, y_pred)))
 
   if args.plot_confusion:
     plot_confusion_matrix(cm)
