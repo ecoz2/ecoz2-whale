@@ -94,8 +94,8 @@ function one_exercise() {
   echo "$cmd"
   $cmd
 
-  train_accuracy=$(cat nb-classification.json | jq .accuracy)
-  train_avg_accuracy=$(cat nb-classification.json | jq .avg_accuracy)
+  train_accuracy=$(    cat nb_${M}_classification.json | jq .accuracy)
+  train_avg_accuracy=$(cat nb_${M}_classification.json | jq .avg_accuracy)
 
   echo
   echo "P=${P} CLASSIFYING TEST SEQUENCES"
@@ -103,8 +103,11 @@ function one_exercise() {
   echo "$cmd"
   $cmd
 
-  test_accuracy=$(cat nb-classification.json | jq .accuracy)
-  test_avg_accuracy=$(cat nb-classification.json | jq .avg_accuracy)
+  ../../exerc06/confusion.py --source nb_${M}_y_true_pred.json
+  echo "  M = $M\n"  # to easily spot/associate with the MCC result above
+
+  test_accuracy=$(    cat nb_${M}_classification.json | jq .accuracy)
+  test_avg_accuracy=$(cat nb_${M}_classification.json | jq .avg_accuracy)
 
   test_end=$SECONDS
   test_duration=$((test_end - test_start))

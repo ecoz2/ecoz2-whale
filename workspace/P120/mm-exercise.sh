@@ -28,7 +28,7 @@ function one_exercise() {
 
   # In parallel, using all cores available:
   ls data/sequences/M${M} | \
-    parallel --results results "ecoz2 mm learn -M=${M} --class-name={} ../tt-list.csv"
+    parallel "ecoz2 mm learn -M=${M} --class-name={} ../tt-list.csv"
 
   train_end=$SECONDS
   train_duration=$((train_end - train_start))

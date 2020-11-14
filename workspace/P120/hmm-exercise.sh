@@ -45,32 +45,32 @@ function one_exercise() {
   echo "  N = $N  M = $M  a = $a  I = $I"
   echo
 
-  # train_start=$SECONDS
-  # echo "TRAINING..."
+  train_start=$SECONDS
+  echo "TRAINING..."
 
-  # # In parallel, using all cores available:
-  # ls data/sequences/M${M} | \
-  #   parallel "ecoz2 hmm learn -N=${N} -M=${M} ${Aparam} ${Iparam} --class-name={} --sequences ../tt-list.csv"
+  # In parallel, using all cores available:
+  ls data/sequences/M${M} | \
+    parallel "ecoz2 hmm learn -N=${N} -M=${M} ${Aparam} ${Iparam} --class-name={} --sequences ../tt-list.csv"
 
-  # train_end=$SECONDS
-  # train_duration=$((train_end - train_start))
-  # echo
-  # duration_string "**TRAINING COMPLETED**" $train_duration
-  # echo " N=$N  M=$M  a=$a  I=$I"
+  train_end=$SECONDS
+  train_duration=$((train_end - train_start))
+  echo
+  duration_string "**TRAINING COMPLETED**" $train_duration
+  echo " N=$N  M=$M  a=$a  I=$I"
 
   # set as convenient:
   #SHOW_RANKED=--show-ranked
   SHOW_RANKED=
 
   test_start=$SECONDS
-  # echo
-  # echo "CLASSIFYING TRAINING SEQUENCES"
-  # #mkdir -p c12n/TEST
-  # #c12n="--c12n c12n/TRAIN/N${N}__M${M}_t3__a${a}${Iname}.csv"
-  # c12n=""
-  # cmd="ecoz2 hmm classify ${SHOW_RANKED} ${c12n} --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} -M=${M} --tt=TRAIN --sequences ../tt-list.csv"
-  # echo "$cmd"
-  # $cmd
+  echo
+  echo "CLASSIFYING TRAINING SEQUENCES"
+  #mkdir -p c12n/TEST
+  #c12n="--c12n c12n/TRAIN/N${N}__M${M}_t3__a${a}${Iname}.csv"
+  c12n=""
+  cmd="ecoz2 hmm classify ${SHOW_RANKED} ${c12n} --models data/hmms/N${N}__M${M}_t3__a${a}${Iname} -M=${M} --tt=TRAIN --sequences ../tt-list.csv"
+  echo "$cmd"
+  $cmd
 
   # train_accuracy=$(cat classification.json | jq .accuracy)
   # train_avg_accuracy=$(cat classification.json | jq .avg_accuracy)
@@ -83,26 +83,24 @@ function one_exercise() {
   echo "$cmd"
   $cmd
 
-  # ../../exerc06/confusion.py --source
+  test_accuracy=$(cat classification.json | jq .accuracy)
+  test_avg_accuracy=$(cat classification.json | jq .avg_accuracy)
 
-  # test_accuracy=$(cat classification.json | jq .accuracy)
-  # test_avg_accuracy=$(cat classification.json | jq .avg_accuracy)
+  test_end=$SECONDS
+  test_duration=$((test_end - test_start))
 
-  # test_end=$SECONDS
-  # test_duration=$((test_end - test_start))
-
-  # echo
-  # duration_string "**CLASSIFICATION COMPLETED**" $test_duration
-  # echo " N=$N  M=$M  a=$a  I=$I"
-  # echo " train_avg_accuracy: $train_avg_accuracy%"
-  # echo "  test_avg_accuracy: $test_avg_accuracy%"
-  # echo
-  # summary_line="$N, $M, $a, $I, $train_accuracy, $train_avg_accuracy, $test_accuracy, $test_avg_accuracy"
-  # if [ ! -f hmm-summary.csv ]; then
-  #   echo "N,M,a,I,Train Ac,Train avgAc,Test Ac,Test avgAc" > hmm-summary.csv
-  # fi
-  # echo "$summary_line" >> hmm-summary.csv
-  # echo
+  echo
+  duration_string "**CLASSIFICATION COMPLETED**" $test_duration
+  echo " N=$N  M=$M  a=$a  I=$I"
+  echo " train_avg_accuracy: $train_avg_accuracy%"
+  echo "  test_avg_accuracy: $test_avg_accuracy%"
+  echo
+  summary_line="$N, $M, $a, $I, $train_accuracy, $train_avg_accuracy, $test_accuracy, $test_avg_accuracy"
+  if [ ! -f hmm-summary.csv ]; then
+    echo "N,M,a,I,Train Ac,Train avgAc,Test Ac,Test avgAc" > hmm-summary.csv
+  fi
+  echo "$summary_line" >> hmm-summary.csv
+  echo
 }
 
 main
