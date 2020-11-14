@@ -59,7 +59,7 @@ def do_plot(csv_filename, show_train):
         add_m_dimension(summary['M'])
         range = add_train_if_so_desired()
 
-    elif csv_filename == 'hmm-summary.csv':
+    elif csv_filename.startswith('hmm-summary'):
         add_other_dimension('N', summary['N'])
         add_m_dimension(summary['M'])
         add_other_dimension('I', summary['I'])

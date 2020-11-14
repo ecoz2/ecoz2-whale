@@ -104,7 +104,7 @@ function one_exercise() {
   $cmd
 
   ../../exerc06/confusion.py --source nb_${M}_y_true_pred.json
-  echo "  M = $M\n"  # to easily spot/associate with the MCC result above
+  echo "  M = $M\n"
 
   test_accuracy=$(    cat nb_${M}_classification.json | jq .accuracy)
   test_avg_accuracy=$(cat nb_${M}_classification.json | jq .avg_accuracy)
