@@ -1,4 +1,12 @@
-A DFT/LPC pair of spectrograms per class, selected arbitrarily:
+<blockquote>
+local prep:
+
+    PATH=/usr/local/Cellar/python@3.8/3.8.6_1/bin:$PATH
+    PATH=../../ecoz2/ecoz2/src/py:$PATH
+
+</blockquote>
+
+### A DFT/LPC pair of spectrograms per class, selected arbitrarily:
 
     sgn.plot.spec.py \
       --signal ../MARS_20161221_000046_SongSession_16kHz_HPF5Hz.wav \
@@ -6,10 +14,10 @@ A DFT/LPC pair of spectrograms per class, selected arbitrarily:
       --selection 1 3 22 43 50 55 65 108 179 180 188 268 274 477 481 660 681 909 1011 1208 1477 1951 2424 \
       --window-size 1024 \
       --window-offset 32 \
-      --lpc 20 \
+      --lpc 120 \
       --lpc-window-size 1024 \
       --lpc-window-offset 32 \
-      --lpc-num-points-per-window 256 \
+      --lpc-num-points-per-window 512 \
       --no-plot \
       --out-prefix=spectrograms/arbitrary-selection/
 
