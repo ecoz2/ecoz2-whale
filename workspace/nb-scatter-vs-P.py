@@ -14,7 +14,7 @@ def plot_csv(filename):
     markers = ['o', '*', 's', 'D', '^', '>', '1', '2', '3', '4', '|', '_']
     marker_index = 0
 
-    fig = plt.figure(figsize=(16, 4))
+    fig = plt.figure(figsize=(6, 4))
 
     # for m in [4096, 2048, 1024, 512, 256, 128, 64, 32]:
     for m in [4096, 2048, 1024, 512]:
@@ -29,10 +29,10 @@ def plot_csv(filename):
       plt.grid(True)
 
     # plt.title(title)
-    plt.legend(loc='best')  # lower right
+    plt.legend(loc='lower right')
     plt.ylabel('Average accuracy on test data (%)')
     plt.xlabel('$P$, Prediction Order')
-    plt.title('N-Bayes Classification Accuracy for various values of $P$ and $M$')
+    plt.title('N-Bayes Classification Accuracy')
 
     fig.savefig('nb-scatter-vs-P.png', bbox_inches='tight')
     # plt.show(block=True)

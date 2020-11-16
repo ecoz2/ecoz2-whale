@@ -34,7 +34,7 @@ def plot_csv(filename):
     plt.legend(loc='best')  # lower right
     plt.ylabel('Average accuracy on test data (%)')
     plt.xlabel('$N$, Number of states')
-    plt.title('HMM Classification Accuracy for various values of $N$ and $M$')
+    plt.title('HMM Classification Accuracy')
 
     fig.savefig('hmm-scatter.png', bbox_inches='tight')
     # plt.show(block=True)
