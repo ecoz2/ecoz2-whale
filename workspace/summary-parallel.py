@@ -53,7 +53,8 @@ def do_plot(csv_filename, show_train):
           add_other_dimension('Train avgAc', train_avg_ac, range)
           return range
 
-    if csv_filename == 'nb-summary.csv':
+    if csv_filename == 'nb-summary.csv' or \
+       csv_filename == 'mm-summary.csv':
         if 'P' in summary:
             add_other_dimension('P', summary['P'])
         add_m_dimension(summary['M'])

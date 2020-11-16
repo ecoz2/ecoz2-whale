@@ -6,7 +6,7 @@ PATH="$HOME/.cargo/bin:$PATH"
 function main() {
   main_start=$SECONDS
 
-  for M in 512 1024 2048 4096; do
+  for M in 4 8 16 32 64 128 256 512 1024 2048 4096; do
     one_exercise ${M}
   done
 
