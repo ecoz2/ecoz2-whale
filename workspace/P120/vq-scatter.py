@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # RUN:
-#   python3 ./mm-scatter.py mm-summary.csv
+#   python3 ./vq-scatter.py vq-summary.csv
 
 
 def plot_csv(filename):
@@ -23,16 +23,16 @@ def plot_csv(filename):
     plt.xscale('log')
     plt.xticks(ms, labels=['{:3}'.format(m) for m in ms])
     plt.grid(True)
-    plt.title('Markov Chain Classification Accuracy ($P=120$)')
+    plt.title('VQ Based Classification Accuracy ($P=120$)')
 
-    fig.savefig('mm-scatter.png', bbox_inches='tight')
+    fig.savefig('vq-scatter.png', bbox_inches='tight')
     # plt.show(block=True)
 
 
 if __name__ == "__main__":
     from sys import argv
     if len(argv) < 2:
-        print('USAGE: mm-scatter.py <csv-filename>')
+        print('USAGE: vq-scatter.py <csv-filename>')
         exit(1)
 
     csv_filename = argv[1]
